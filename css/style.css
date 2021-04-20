@@ -357,8 +357,8 @@ margin-top:15px
     position: relative;
 }
 .carousel-indicators li{
-    width:17px;
-    height:17px;
+    width:12px;
+    height:12px;
     border-radius: 50%;
     margin-right: 10px;
     border:5px solid rgba(0,0,0,0.2);
