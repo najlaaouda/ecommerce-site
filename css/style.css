@@ -566,6 +566,17 @@ left:50px; */
 
 }
 
+@media (max-width:900px) {
+    .arrow .shape{
+        top:10%;
+    } 
+
+ 
+    .arrow .shape2{
+        top:18%;
+    } 
+}
+
 .shape1{
     position: absolute;
     top:3%; 
