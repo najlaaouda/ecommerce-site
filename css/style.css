@@ -34,19 +34,12 @@ header a:hover, header a:focus{
  a:hover, a:focus{
      color:var(--maincolor)
  }
- /* .dropdown-menu{
-     left:-10px;
-     top:37px;
-     min-width:2rem;
-     font-size: 14px;
- } */
 
 
  .dropdown-item{
     color:rgb(104, 104, 104);
     text-transform: uppercase;
     font-size: 14px;
-    /* padding-top: 12px; */
 
  }
  .dropdown-item:hover{
@@ -164,8 +157,6 @@ li.nav-item.active a{
 .category-women
 {
 
-    /* min-width: 45rem; */
-    /* max-width: 45rem; */
     left: -154px;
     top: 43px;
 }
@@ -243,7 +234,6 @@ h5{
     border:1px solid #ced4da;
     border-radius: 0.3rem;
     border-top:none;
-    /* border-bottom: none; */
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 
@@ -289,6 +279,15 @@ h5{
     font-size: 13px;
     line-height: 25px;
 }
+.clothes{
+    position: relative;
+}
+.side-menu{
+position: absolute;
+top:37px;
+left:0;
+}
+
  /* End nav section */
 
 
@@ -302,7 +301,6 @@ h5{
     z-index: 2;
     background-color: var(--maincolor); 
     font-size: 14px;
-   /* transform: translateY(-50px); */
 }
 .list-icon a{
     padding:0;
@@ -427,7 +425,6 @@ position:absolute;
 @keyframes top-slide {
     0%{
 
-        /* top:0; */
         right:15%;
         transform: translateY(0);
         transform: rotate(-45deg);
@@ -436,7 +433,6 @@ position:absolute;
 
     
     50%{
-        /* top:0; */
         right:15%;
         transform: translateY(-10px);
          opacity: 0.5;
@@ -444,7 +440,6 @@ position:absolute;
 
     }
     80%{
-        /* top:0; */
         right:15%;
         transform: translateY(-10px);
          opacity: 0.2;
@@ -453,7 +448,6 @@ position:absolute;
     }
    
     100%{
-        /* top:0; */
         right:15%;
         transform: translateY(10px);
          opacity: 1;
@@ -464,7 +458,6 @@ position:absolute;
 @keyframes top-slide1 {
     0%{
 
-        /* top:0; */
         right:15%;
         transform: translateY(0);
         transform: rotate(-45deg);
@@ -473,7 +466,6 @@ position:absolute;
 
     
     50%{
-        /* top:0; */
         right:15%;
         transform: translateY(-10px);
          opacity: 0.6;
@@ -481,7 +473,6 @@ position:absolute;
 
     }
     80%{
-        /* top:0; */
         right:15%;
         transform: translateY(-10px);
          opacity: 0.9;
@@ -490,7 +481,6 @@ position:absolute;
     }
    
     100%{
-        /* top:0; */
         right:15%;
         transform: translateY(10px);
          opacity: 1;
@@ -501,7 +491,6 @@ position:absolute;
 @keyframes top-slide2{
     0%{
 
-        /* top:0; */
         right:15%;
         transform: translateY(0);
         transform: rotate(-45deg);
@@ -510,7 +499,6 @@ position:absolute;
 
     
     50%{
-        /* top:0; */
         right:15%;
         transform: translateY(-10px);
          opacity: 0.5;
@@ -518,7 +506,6 @@ position:absolute;
 
     }
     80%{
-        /* top:0; */
         right:15%;
         transform: translateY(-10px);
          opacity: 0.9;
@@ -527,7 +514,6 @@ position:absolute;
     }
    
     100%{
-        /* top:0; */
         right:15%;
         transform: translateY(10px);
          opacity: 1;
@@ -607,77 +593,67 @@ position:absolute;
 font-weight: bold;
 font-size: 28px;
 }
+
  /* End Slider */
 
  /* adv */
-.card{
-    position: relative;
-    text-transform: uppercase;
-    border:none;
-    border-radius: 0;
-    max-height: 100%;
- }
-.card-adv img{
+
+.advs:hover{
+    box-shadow: 1px 1px 10px #cccccc;
+    opacity:0.5
+    }
+  .advs img.card-img-top{
     height:95%;
-    position:relative ;
-  
+    border-radius: 0;
+}
+.shop img.card-img-top{
+    border-radius: 0;
+
 }
 
-.card-adv:hover{
-box-shadow: 1px 1px 10px #cccccc;
-opacity:0.5;
+.advs, .shop{
+    position: relative;
+    height:100% !important;
+    border:0;
+    border-radius: 0;
 }
 
-
-
- .card-adv:hover .quick{
-visibility: visible;
-
- }
-.quick{
-    position:absolute;
-    top:50%;
-    left:25%;
-    visibility: hidden;
-        }
- .quick a:hover{
-    border:2px solid var(--maincolor);
-    color:var(--maincolor);
-    background-color: #fff !important ;
-}
-
-.card h5{
-    color:#fff;
-    position: absolute;
-    top:0;
-    left:0;
-    font-size: 12px;
+.text-adv{
     text-transform: uppercase;
-    font-weight: 500;
+    position: absolute;
+    left:0;
+    top:0;
+    font-size: 13px;
 }
+.view-quick{
+    position: absolute;
+    left:27%;
+    top:40%;
+    visibility: hidden;
+}
+.advs:hover .view-quick{
+    visibility: visible;
+}
+.view-quick a:hover{
+
+    background-color: #fff !important;
+    border:1px solid var(--maincolor);
+    color:var(--maincolor);
+}
+
 .shop a
 {
     position: absolute;
     font-size: 12px;
     bottom:10%;
     left:8%;
-
 }
-
 .card h1{
     position: absolute;
     bottom:20%;
     font-weight: bold;
     font-size: 28px;
     left:8%;
-}
-.clothes{
-    position: relative;
-}
-.side-menu{
-position: absolute;
-top:37px;
-left:0;
 }
 
  /* adv */
@@ -716,9 +692,10 @@ left:0;
     opacity: 0.5;
 
 }
-/* .products{
-    position: relative;
-} */
+.products{
+    border:0
+    /* position: relative; */
+}
 
 .products:hover .product-img{
     visibility: visible;
@@ -830,6 +807,11 @@ ul#example li{
     left:0;
     top:0;
     padding:6px 15px;
+}
+
+ .new, .offer{
+    text-transform: uppercase;
+    font-size: 13px;
 }
 .products .offer{
 

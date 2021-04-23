@@ -73,13 +73,13 @@ var txt = "";
 
 //    start advs sectoion
 
-function test(btn){
+function mouseOver(btn){
   // img.style.opacity = "1";
 
   document.getElementById("img"+btn.id).style.opacity = "0.5";
 
 }
-function test2(x){
+function mouseOut(x){
 
   document.getElementById("img"+x.id).style.opacity = "1";
 
@@ -88,16 +88,6 @@ function test2(x){
 // Start Flip section
 
 $('.my-flipster').flipster();
-// var myFlipster = $('.my-flipster').flipster(); // It's best to store the element as a variable for easy reference.
-// myFlipster.flipster('next'); // Next item
-// myFlipster.flipster('prev'); // Previous item
-// myFlipster.flipster('jump', 0); // Jump to a specific index
-// myFlipster.flipster('jump', $('.my-item')); // Jump to a specific item
-// myFlipster.flipster('play'); // Resume autoplay
-// myFlipster.flipster('play', 5000); // Set autoplay duration
-// myFlipster.flipster('pause'); // Pause the autoplay until next jump
-// myFlipster.flipster('stop'); // Stop the autoplay entirely
-// myFlipster.flipster('index'); // If items are added or removed, you can tell Flipster to reindex
 
 // End Flip section
 

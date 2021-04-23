@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/jquery.flipster.min.css">
     <link rel="stylesheet" href="css/jquery.countdown.css">
     <link rel="icon" href="img/logos.jpeg">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -393,7 +394,7 @@
                     <img class="d-block w-100 anime" src="img/slider/slider5.jpg" alt="Five slide">
                 </div>
             </div>
-            
+
         </div>
 
         <div class="row justify-content-center no-gutters">
@@ -721,50 +722,68 @@
 
     <section class="adv">
         <div class="container">
-            <div class="row">
-                <div>
-
-
-                    <div class="card-deck  py-5 ">
-                        <div class="card shop col-md-6  col-lg-3 col-12 p-0 border-0   ">
-                            <img class=" w-100 h-100" src="img/ad/adv1.jpg" alt="Card image cap">
-                            <a href="#" class="nav-link bg-primary p-2">shop now</a>
-                            <h1 class="text-white text-uppercase">new <br>collection</h1>
-                        </div>
-
-                        <div class="card card-adv col-md-6  col-lg-3 col-12 p-0 border-0  ">
-                            <img class=" w-100" src="img/ad/adv2 .jpg" alt="Card image cap" id="imgbtn1">
-                            <h5 class="bg-dark px-3 py-2">adv</h5>
-                            <div class="quick">
-                                <a href="#" class="nav-link bg-primary p-2" id="btn1" onmouseover="test(this)"
-                                    onmouseout="test2(this)">
-                                    <i class="fas fa-search-plus mr-2 "></i>quick view</a>
-                            </div>
-                        </div>
-                        <div class="card card-adv col-md-6  col-lg-3 col-12 p-0 border-0  ">
-                            <img class="w-100" src="img/ad/adv3.jpg" id="imgbtn2" alt="Card image cap">
-                            <h5 class="bg-dark px-3 py-2">adv</h5>
-                            <div class="quick">
-                                <a href="#" class="nav-link bg-primary p-2 " id="btn2" onmouseover="test(this)"
-                                    onmouseout="test2(this)">
-                                    <i class="fas fa-search-plus mr-2 "></i>quick view</a>
-                            </div>
-                        </div>
-
-                        <div class="card card-adv col-md-6  col-lg-3 col-12 p-0 border-0  ">
-                            <img class=" w-100" src="img/ad/adv4.jpg" alt="Card image cap" id="imgbtn3">
-                            <h5 class="bg-dark px-3 py-2">adv</h5>
-                            <div class="quick">
-                                <a href="#" class="nav-link bg-primary p-2 " id="btn3" onmouseover="test(this)"
-                                    onmouseout="test2(this)">
-                                    <i class="fas fa-search-plus mr-2 "></i>quick view</a>
-                            </div>
-                        </div>
-
+            <div class="row py-5">
+                <!-- adv sale -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card shop">
+                        <img class="card-img-top" src="img/ad/adv1.jpg" alt="image adv">
+                        <a href="#" class="nav-link bg-primary p-2">shop now</a>
+                        <h1 class="text-white text-uppercase">new <br>collection</h1>
                     </div>
-
                 </div>
+                <!-- adv sale -->
+                <!-- image1 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card advs">
+                        <img class="card-img-top" src="img/ad/adv2 .jpg" alt="image adv" id="imgbtn">
+                        <div>
+                            <h5 class="text-adv bg-dark p-2">advs</h5>
+                            <div class="view-quick">
+                                <a href="#" class="nav-link bg-primary p-2" id="btn" onmouseover="mouseOver(this)"
+                                    onmouseout="mouseOut(this)">
+                                    <i class="fas fa-search-plus mr-1 "></i>quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- image1 -->
+
+                      <!-- image2-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card advs">
+                        <img class="card-img-top" src="img/ad/adv3.jpg" alt="image adv" id="imgbtn1">
+                        <div>
+                            <h5 class="text-adv bg-dark p-2">advs</h5>
+                            <div class="view-quick">
+                                <a href="#" class="nav-link bg-primary p-2" id="btn1" onmouseover="mouseOver(this)"
+                                    onmouseout="mouseOut(this)">
+                                    <i class="fas fa-search-plus mr-1 "></i>quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- image2 -->
+
+                  <!-- image3 -->
+                  <div class="col-md-3 col-sm-6">
+                    <div class="card advs">
+                        <img class="card-img-top" src="img/ad/adv4.jpg" alt="image adv" id="imgbtn2">
+                        <div>
+                            <h5 class="text-adv bg-dark p-2">advs</h5>
+                            <div class="view-quick">
+                                <a href="#" class="nav-link bg-primary p-2" id="btn2" onmouseover="mouseOver(this)"
+                                    onmouseout="mouseOut(this)">
+                                    <i class="fas fa-search-plus mr-1 "></i>quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- image3 -->
+
+
+
             </div>
+        </div>
 
     </section>
 
@@ -793,7 +812,7 @@
         </div>
     </section>
     <!-- End Flipster section -->
-     <!-- start New Arrival -->
+    <!-- start New Arrival -->
     <section class="arrival-product py-5">
         <div class="container">
             <div class="row  no-gutters justify-content-center">
@@ -804,141 +823,154 @@
                 </div>
             </div>
             <!--   product collect1 -->
-            <div class="row  no-gutters align-content-around">
-                <div class="card-deck">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-1.jpg" alt="image-productp">
-                            <div class="product-img">
-                                <a href="#" class="nav-link ">
-                                    <i class="fas fa-search-plus  "></i>view more</a>
-                            </div>
-                            <div class="card-body px-2">
-                                <span class="price-product "> 32.05 egp</span>
-                                <span class="card-text text-product float-right">product name</span>
-                            </div>
-                                <div class="icon-product">
-                                <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                    </li>
-                                   
-                                    <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                    </li>
-                                                                                                   
-                                </ul>
-                                </div>
-
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card products">
+                        <img class="card-img-top position-relative" src="img/products/product-1.jpg"
+                            alt="image-productp">
+                        <div class="product-img">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-search-plus  "></i>view more</a>
                         </div>
-                    </div>
-                    <!-- card2 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-2.jpg" alt="image-productp">
-                            <div class="product-img">
-                                <a href="#" class="nav-link ">
-                                    <i class="fas fa-search-plus  "></i>view more</a>
-                            </div>
-                            <div class="card-body px-2">
-                                <span class="price-product "> 32.05 egp</span>
-                                <span class="card-text text-product float-right">product name</span>
-                            </div>
-                                <div class="icon-product">
-                                <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                    </li>
-                                   
-                                    <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                    </li>
-                                                                                                   
-                                </ul>
-                                </div>
-
+                        <div class="card-body px-2">
+                            <span class="price-product "> 32.05 egp</span>
+                            <span class="card-text text-product float-right">product name</span>
                         </div>
-                    </div>
-                    <!-- card2 -->
-                    <!-- card3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-3.jpg" alt="image-productp">
-                            <div class="product-img">
-                                <a href="#" class="nav-link ">
-                                    <i class="fas fa-search-plus  "></i>view more</a>
-                            </div>
-                            <div class="card-body px-2">
-                                <span class="price-product "> 32.05 egp</span>
-                                <span class="card-text text-product float-right">product name</span>
-                            </div>
-                                <div class="icon-product">
-                                <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                    </li>
-                                   
-                                    <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                    </li>
-                                                                                                   
-                                </ul>
-                                </div>
+                        <div class="icon-product">
+                            <ul class="nav justify-content-between p-2">
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
+                                </li>
 
-                        </div>
-                    </div>
-                    <!-- card3 -->
-                    <!-- card4 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-4.jpg" alt="image-productp">
-                            <div class="product-img">
-                                <a href="#" class="nav-link ">
-                                    <i class="fas fa-search-plus  "></i>view more</a>
-                            </div>
-                            <div class="card-body px-2">
-                                <span class="price-product "> 32.05 egp</span>
-                                <span class="card-text text-product float-right">product name</span>
-                            </div>
-                                <div class="icon-product">
-                                <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                    </li>
-                                   
-                                    <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                    </li>
-                                                                                                   
-                                </ul>
-                                </div>
+                                <li class=" add-cart">
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                </li>
 
+                            </ul>
                         </div>
+
                     </div>
-                    <!-- card4 -->
                 </div>
+                <!-- card2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card products">
+                        <img class="card-img-top position-relative" src="img/products/product-2.jpg"
+                            alt="image-productp">
+                        <div class="product-img">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-search-plus  "></i>view more</a>
+                        </div>
+                        <div class="card-body px-2">
+                            <span class="price-product "> 32.05 egp</span>
+                            <span class="card-text text-product float-right">product name</span>
+                        </div>
+                        <div class="icon-product">
+                            <ul class="nav justify-content-between p-2">
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
+                                </li>
 
+                                <li class=" add-cart">
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card2 -->
+                <!-- card3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card products">
+                        <img class="card-img-top position-relative" src="img/products/product-3.jpg"
+                            alt="image-productp">
+                        <div class="product-img">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-search-plus  "></i>view more</a>
+                        </div>
+                        <div class="card-body px-2">
+                            <span class="price-product "> 32.05 egp</span>
+                            <span class="card-text text-product float-right">product name</span>
+                        </div>
+                        <div class="icon-product">
+                            <ul class="nav justify-content-between p-2">
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
+                                </li>
+
+                                <li class=" add-cart">
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card3 -->
+                <!-- card4 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card products">
+                        <img class="card-img-top position-relative" src="img/products/product-4.jpg"
+                            alt="image-productp">
+                        <div class="product-img">
+                            <a href="#" class="nav-link ">
+                                <i class="fas fa-search-plus  "></i>view more</a>
+                        </div>
+                        <div class="card-body px-2">
+                            <span class="price-product "> 32.05 egp</span>
+                            <span class="card-text text-product float-right">product name</span>
+                        </div>
+                        <div class="icon-product">
+                            <ul class="nav justify-content-between p-2">
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
+                                </li>
+
+                                <li class=" add-cart">
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- card4 -->
             </div>
-           <!--   product collect1 -->
+            <!--   product collect1 -->
             <!--   product collect2 -->
             <div class="product-group2    pt-4">
-            <div class="row no-gutters align-content-around">
-                <div class="card-deck">
+                <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-5.jpg" alt="image-productp">
+                            <img class="card-img-top position-relative" src="img/products/product-5.jpg"
+                                alt="image-productp">
                             <div class="product-img">
                                 <a href="#" class="nav-link ">
                                     <i class="fas fa-search-plus  "></i>view more</a>
@@ -947,28 +979,32 @@
                                 <span class="price-product "> 32.05 egp</span>
                                 <span class="card-text text-product float-right">product name</span>
                             </div>
-                                <div class="icon-product">
+                            <div class="icon-product">
                                 <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
                                     </li>
-                                   
+
                                     <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                     </li>
-                                                                                                   
+
                                 </ul>
-                                </div>
+                            </div>
 
                         </div>
                     </div>
                     <!-- card2 -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-6.jpg" alt="image-productp">
+                            <img class="card-img-top position-relative" src="img/products/product-6.jpg"
+                                alt="image-productp">
                             <div class="product-img">
                                 <a href="#" class="nav-link ">
                                     <i class="fas fa-search-plus  "></i>view more</a>
@@ -977,21 +1013,24 @@
                                 <span class="price-product "> 32.05 egp</span>
                                 <span class="card-text text-product float-right">product name</span>
                             </div>
-                                <div class="icon-product">
+                            <div class="icon-product">
                                 <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
                                     </li>
-                                   
+
                                     <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                     </li>
-                                                                                                   
+
                                 </ul>
-                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -999,7 +1038,8 @@
                     <!-- card3 -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-7.jpg" alt="image-productp">
+                            <img class="card-img-top position-relative" src="img/products/product-7.jpg"
+                                alt="image-productp">
                             <div class="product-img">
                                 <a href="#" class="nav-link ">
                                     <i class="fas fa-search-plus  "></i>view more</a>
@@ -1008,21 +1048,24 @@
                                 <span class="price-product "> 32.05 egp</span>
                                 <span class="card-text text-product float-right">product name</span>
                             </div>
-                                <div class="icon-product">
+                            <div class="icon-product">
                                 <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
                                     </li>
-                                   
+
                                     <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                     </li>
-                                                                                                   
+
                                 </ul>
-                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -1030,7 +1073,8 @@
                     <!-- card4 -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card products">
-                            <img class="card-img-top position-relative" src="img/products/product-8.jpg" alt="image-productp">
+                            <img class="card-img-top position-relative" src="img/products/product-8.jpg"
+                                alt="image-productp">
                             <div class="product-img">
                                 <a href="#" class="nav-link ">
                                     <i class="fas fa-search-plus  "></i>view more</a>
@@ -1039,30 +1083,33 @@
                                 <span class="price-product "> 32.05 egp</span>
                                 <span class="card-text text-product float-right">product name</span>
                             </div>
-                                <div class="icon-product">
+                            <div class="icon-product">
                                 <ul class="nav justify-content-between p-2">
-                                    <li >
-                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
                                     </li>
-                                   
+
                                     <li class=" add-cart">
-                                        <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                     </li>
-                                                                                                   
+
                                 </ul>
-                                </div>
+                            </div>
 
                         </div>
                     </div>
                     <!-- card4 -->
+
+
                 </div>
-
             </div>
-        </div>
-        <!--   product collect2 -->
+            <!--   product collect2 -->
 
         </div>
     </section>
@@ -1075,22 +1122,30 @@
                 <div class="col-sm-6 col-12">
                 </div>
                 <div class="col-sm-6 col-12 ">
-                        <div class="title-counter text-start">
-                            <h6 class="text-capitalize"><i> best price for you</i></h6>
-                            <h2 class="text-capitalize font-weight-bold">deal of the day</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <h4 class="text-capitalize"> buy now 50% OFF </h4>
-                            <div class="dropdown-divider divid "></div>
-                        </div>
-                   
-                        <ul id="example"  >
-                            <li><span class="days">00</span><p class="days_text">Days</p></li>
-                            <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-                            <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-                            <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-                        </ul>
-       
+                    <div class="title-counter text-start">
+                        <h6 class="text-capitalize"><i> best price for you</i></h6>
+                        <h2 class="text-capitalize font-weight-bold">deal of the day</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <h4 class="text-capitalize"> buy now 50% OFF </h4>
                         <div class="dropdown-divider divid "></div>
+                    </div>
+
+                    <ul id="example">
+                        <li><span class="days">00</span>
+                            <p class="days_text">Days</p>
+                        </li>
+                        <li><span class="hours">00</span>
+                            <p class="hours_text">Hours</p>
+                        </li>
+                        <li><span class="minutes">00</span>
+                            <p class="minutes_text">Minutes</p>
+                        </li>
+                        <li><span class="seconds">00</span>
+                            <p class="seconds_text">Seconds</p>
+                        </li>
+                    </ul>
+
+                    <div class="dropdown-divider divid "></div>
 
                 </div>
 
@@ -1101,24 +1156,23 @@
 
     <!-- End Counter Section -->
 
- <!-- start best offer -->
- <section class="best-offer py-5">
-    <div class="container">
-        <div class="row  no-gutters justify-content-center">
-            <div class="title-best-offer text-center pb-3">
-                <h6 class="text-capitalize"> <i>products </i> </h6>
-                <h2 class="text-capitalize font-weight-bold">best offers</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <!-- start best offer -->
+    <section class="best-offer py-5">
+        <div class="container">
+            <div class="row  no-gutters justify-content-center">
+                <div class="title-best-offer text-center pb-3">
+                    <h6 class="text-capitalize"> <i>products </i> </h6>
+                    <h2 class="text-capitalize font-weight-bold">best offers</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
-        </div>
-        <!--   product collect1 -->
-        <div class="row  no-gutters align-content-around">
-            <div class="card-deck">
+            <!--   product collect1 -->
+            <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="card products ">
-                       <img class="card-img-top " src="img/products/product-1.jpg" alt="image-productp">
-                       <h5 class="new bg-dark">new</h5>
-                       <h5 class="offer ">-20%</h5>
+                        <img class="card-img-top " src="img/products/product-1.jpg" alt="image-productp">
+                        <h5 class="new bg-dark">new</h5>
+                        <h5 class="offer ">-20%</h5>
                         <div class="product-img">
                             <a href="#" class="nav-link ">
                                 <i class="fas fa-search-plus  "></i>view more</a>
@@ -1127,21 +1181,24 @@
                             <span class="price-product "> 32.05 egp</span>
                             <span class="card-text text-product float-right">product name</span>
                         </div>
-                            <div class="icon-product">
+                        <div class="icon-product">
                             <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
                                 </li>
-                               
+
                                 <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                 </li>
-                                                                                               
+
                             </ul>
-                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -1159,21 +1216,24 @@
                             <span class="price-product "> 32.05 egp</span>
                             <span class="card-text text-product float-right">product name</span>
                         </div>
-                            <div class="icon-product">
+                        <div class="icon-product">
                             <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
                                 </li>
-                               
+
                                 <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                 </li>
-                                                                                               
+
                             </ul>
-                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -1181,9 +1241,9 @@
                 <!-- card3 -->
                 <div class="col-md-3 col-sm-6">
                     <div class="card products">
-                       <img class="card-img-top " src="img/products/product-3.jpg" alt="image-productp">
-                       <h5 class="new bg-dark">new</h5>
-                       <h5 class="offer ">-20%</h5>
+                        <img class="card-img-top " src="img/products/product-3.jpg" alt="image-productp">
+                        <h5 class="new bg-dark">new</h5>
+                        <h5 class="offer ">-20%</h5>
                         <div class="product-img">
                             <a href="#" class="nav-link ">
                                 <i class="fas fa-search-plus  "></i>view more</a>
@@ -1192,21 +1252,24 @@
                             <span class="price-product "> 32.05 egp</span>
                             <span class="card-text text-product float-right">product name</span>
                         </div>
-                            <div class="icon-product">
+                        <div class="icon-product">
                             <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
                                 </li>
-                               
+
                                 <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                 </li>
-                                                                                               
+
                             </ul>
-                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -1225,172 +1288,183 @@
                             <span class="price-product "> 32.05 egp</span>
                             <span class="card-text text-product float-right">product name</span>
                         </div>
-                            <div class="icon-product">
+                        <div class="icon-product">
                             <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
+                                <li>
+                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                            class="fas fa-heart"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
+                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                            class="fas fa-share-alt"></i></a>
                                 </li>
-                               
+
                                 <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    <a href="#" class="nav-link text-uppercase"><i
+                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
                                 </li>
-                                                                                               
+
                             </ul>
-                            </div>
+                        </div>
 
                     </div>
                 </div>
                 <!-- card4 -->
             </div>
-
-        </div>
-       <!--   product collect1 -->
-        <!--   product collect2 -->
-        <div class="product-group2    pt-4">
-        <div class="row no-gutters align-content-around">
-            <div class="card-deck">
-                <div class="col-md-3 col-sm-6">
-                    <div class="card products">
-                         <img class="card-img-top " src="img/products/product-5.jpg" alt="image-productp">
-                        <h5 class="new bg-dark">new</h5>
-                        <h5 class="offer ">-20%</h5>
-                        <div class="product-img">
-                            <a href="#" class="nav-link ">
-                                <i class="fas fa-search-plus  "></i>view more</a>
-                        </div>
-                        <div class="card-body px-2">
-                            <span class="price-product "> 32.05 egp</span>
-                            <span class="card-text text-product float-right">product name</span>
-                        </div>
+            <!--   product collect1 -->
+            <!--   product collect2 -->
+            <div class="product-group2 pt-4">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card products">
+                            <img class="card-img-top " src="img/products/product-5.jpg" alt="image-productp">
+                            <h5 class="new bg-dark">new</h5>
+                            <h5 class="offer ">-20%</h5>
+                            <div class="product-img">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-search-plus  "></i>view more</a>
+                            </div>
+                            <div class="card-body px-2">
+                                <span class="price-product "> 32.05 egp</span>
+                                <span class="card-text text-product float-right">product name</span>
+                            </div>
                             <div class="icon-product">
-                            <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                               
-                                <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                </li>
-                                                                                               
-                            </ul>
+                                <ul class="nav justify-content-between p-2">
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" add-cart">
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    </li>
+
+                                </ul>
                             </div>
 
+                        </div>
                     </div>
-                </div>
-                <!-- card2 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="card products">
-                        <img class="card-img-top " src="img/products/product-6.jpg" alt="image-productp">
-                        <h5 class="new bg-dark">new</h5>
-                        <h5 class="offer ">-20%</h5>
-                        <div class="product-img">
-                            <a href="#" class="nav-link ">
-                                <i class="fas fa-search-plus  "></i>view more</a>
-                        </div>
-                        <div class="card-body px-2">
-                            <span class="price-product "> 32.05 egp</span>
-                            <span class="card-text text-product float-right">product name</span>
-                        </div>
+                    <!-- card2 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card products">
+                            <img class="card-img-top " src="img/products/product-6.jpg" alt="image-productp">
+                            <h5 class="new bg-dark">new</h5>
+                            <h5 class="offer ">-20%</h5>
+                            <div class="product-img">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-search-plus  "></i>view more</a>
+                            </div>
+                            <div class="card-body px-2">
+                                <span class="price-product "> 32.05 egp</span>
+                                <span class="card-text text-product float-right">product name</span>
+                            </div>
                             <div class="icon-product">
-                            <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                               
-                                <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                </li>
-                                                                                               
-                            </ul>
+                                <ul class="nav justify-content-between p-2">
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" add-cart">
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    </li>
+
+                                </ul>
                             </div>
 
+                        </div>
                     </div>
-                </div>
-                <!-- card2 -->
-                <!-- card3 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="card products">
-                        <img class="card-img-top " src="img/products/product-7.jpg" alt="image-productp">
-                        <h5 class="new bg-dark">new</h5>
-                        <h5 class="offer ">-20%</h5>
-                        <div class="product-img">
-                            <a href="#" class="nav-link ">
-                                <i class="fas fa-search-plus  "></i>view more</a>
-                        </div>
-                        <div class="card-body px-2">
-                            <span class="price-product "> 32.05 egp</span>
-                            <span class="card-text text-product float-right">product name</span>
-                        </div>
+                    <!-- card2 -->
+                    <!-- card3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card products">
+                            <img class="card-img-top " src="img/products/product-7.jpg" alt="image-productp">
+                            <h5 class="new bg-dark">new</h5>
+                            <h5 class="offer ">-20%</h5>
+                            <div class="product-img">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-search-plus  "></i>view more</a>
+                            </div>
+                            <div class="card-body px-2">
+                                <span class="price-product "> 32.05 egp</span>
+                                <span class="card-text text-product float-right">product name</span>
+                            </div>
                             <div class="icon-product">
-                            <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                               
-                                <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                </li>
-                                                                                               
-                            </ul>
+                                <ul class="nav justify-content-between p-2">
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" add-cart">
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    </li>
+
+                                </ul>
                             </div>
 
+                        </div>
                     </div>
-                </div>
-                <!-- card3 -->
-                <!-- card4 -->
-                <div class="col-md-3 col-sm-6">
-                    <div class="card products">
-                          <img class="card-img-top " src="img/products/product-8.jpg" alt="image-productp">
-                        <h5 class="new bg-dark">new</h5>
-                        <h5 class="offer ">-20%</h5>
-                        <div class="product-img">
-                            <a href="#" class="nav-link ">
-                                <i class="fas fa-search-plus  "></i>view more</a>
-                        </div>
-                        <div class="card-body px-2">
-                            <span class="price-product "> 32.05 egp</span>
-                            <span class="card-text text-product float-right">product name</span>
-                        </div>
+                    <!-- card3 -->
+                    <!-- card4 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card products">
+                            <img class="card-img-top " src="img/products/product-8.jpg" alt="image-productp">
+                            <h5 class="new bg-dark">new</h5>
+                            <h5 class="offer ">-20%</h5>
+                            <div class="product-img">
+                                <a href="#" class="nav-link ">
+                                    <i class="fas fa-search-plus  "></i>view more</a>
+                            </div>
+                            <div class="card-body px-2">
+                                <span class="price-product "> 32.05 egp</span>
+                                <span class="card-text text-product float-right">product name</span>
+                            </div>
                             <div class="icon-product">
-                            <ul class="nav justify-content-between p-2">
-                                <li >
-                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i class="fas fa-heart"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i class="fas fa-share-alt"></i></a>
-                                </li>
-                               
-                                <li class=" add-cart">
-                                    <a href="#" class="nav-link text-uppercase"><i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                </li>
-                                                                                               
-                            </ul>
+                                <ul class="nav justify-content-between p-2">
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" add-cart">
+                                        <a href="#" class="nav-link text-uppercase"><i
+                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                    </li>
+
+                                </ul>
                             </div>
 
+                        </div>
                     </div>
+                    <!-- card4 -->
+
                 </div>
-                <!-- card4 -->
             </div>
+            <!--   product collect2 -->
 
         </div>
-    </div>
-    <!--   product collect2 -->
-
-    </div>
-</section>
-<!-- end best offer -->
+    </section>
+    <!-- end best offer -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
