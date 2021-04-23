@@ -689,14 +689,16 @@ left:0;
 }
  .title-flip h6,
  .title-arrival h6,
- .title-counter h6
+ .title-counter h6,
+ .title-best-offer h6
 
  {
     color:var(--maincolor);
  }
  .title-flip p,
  .title-arrival p,
- .title-counter p{
+ .title-counter p,
+ .title-best-offer p{
      font-size: 14px;
      color:#8b8b8b
  }
@@ -817,3 +819,24 @@ ul#example li{
 }
 
  /* End counter Section */
+
+
+ /*  start offer section */
+.products{
+    position: relative;
+}
+.products .new{
+    position:absolute;
+    left:0;
+    top:0;
+    padding:6px 15px;
+}
+.products .offer{
+
+    position:absolute;
+    top:25px;
+    left:0;
+    padding:6px 13px;
+    background-color: var(--maincolor);
+}
+ /* end offer section */
