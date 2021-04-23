@@ -71,39 +71,53 @@ var txt = "";
       
   }
 
-//   advs sectoion
+//    start advs sectoion
 
-var button = document.getElementById("btn1");
-var button1 = document.getElementById("btn2");
-var button2 = document.getElementById("btn3");
+function test(btn){
+  // img.style.opacity = "1";
 
-var img1 = document.getElementById("img1");
-var img2 = document.getElementById("img2");
-var img3 = document.getElementById("img3");
-
-button.onmouseover = function() {
-  img1.style.opacity = ".5";
-
+  document.getElementById("img"+btn.id).style.opacity = "0.5";
 
 }
-button.onmouseout = function() {
-  img1.style.opacity = "1";
-} 
+function test2(x){
 
-button1.onmouseover = function() {
-    img2.style.opacity = ".5";
-  }
-  button1.onmouseout = function() {
-    img2.style.opacity = "1";
+  document.getElementById("img"+x.id).style.opacity = "1";
 
-  } 
-  
-button2.onmouseover = function() {
-    img3.style.opacity = ".5";
-  }
-  button2.onmouseout = function() {
-    img3.style.opacity = "1";
-  }
+}
 //   advs sectoion
+// Start Flip section
+
+$('.my-flipster').flipster();
+// var myFlipster = $('.my-flipster').flipster(); // It's best to store the element as a variable for easy reference.
+// myFlipster.flipster('next'); // Next item
+// myFlipster.flipster('prev'); // Previous item
+// myFlipster.flipster('jump', 0); // Jump to a specific index
+// myFlipster.flipster('jump', $('.my-item')); // Jump to a specific item
+// myFlipster.flipster('play'); // Resume autoplay
+// myFlipster.flipster('play', 5000); // Set autoplay duration
+// myFlipster.flipster('pause'); // Pause the autoplay until next jump
+// myFlipster.flipster('stop'); // Stop the autoplay entirely
+// myFlipster.flipster('index'); // If items are added or removed, you can tell Flipster to reindex
+
+// End Flip section
 
 
+// Start Counter 
+var now = new Date();
+var day = now.getDate();
+var month = now.getMonth() + 1;
+var year = now.getFullYear() + 1;
+
+var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+
+$('#example').countdown({
+  date: nextyear, // TODO Date format: 07/27/2017 17:00:00
+  offset: +2, // TODO Your Timezone Offset
+  day: 'Day',
+  days: 'Days',
+  hideOnComplete: true
+}, function(container) {
+  alert('Done!');
+});
+
+// End Counter
