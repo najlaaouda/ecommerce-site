@@ -661,12 +661,16 @@ font-size: 28px;
 
  /* Start Flip */
 .flipster{
-    background-color: #fbfbfb;
+    background-color: #f8f8ff;
 }
  .title-flip h6,
  .title-arrival h6,
  .title-counter h6,
- .title-best-offer h6
+ .title-best-offer h6,
+ .title-coming-soon h6,
+ .title-review h6,
+ .title-contact p,
+ .title-contact h6
 
  {
     color:var(--maincolor);
@@ -674,7 +678,9 @@ font-size: 28px;
  .title-flip p,
  .title-arrival p,
  .title-counter p,
- .title-best-offer p{
+ .title-best-offer p,
+ .title-coming-soon p,
+ .title-review p{
      font-size: 14px;
      color:#8b8b8b
  }
@@ -822,3 +828,222 @@ ul#example li{
     background-color: var(--maincolor);
 }
  /* end offer section */
+
+ /* offer section  */
+ .offer{
+    background-color: #f6f7f8;
+}
+.offer-img{
+    position: relative;
+}
+
+
+.right-side-soon img,.right-side-soon img{
+    height:88%;
+    border-radius: 10px;
+}
+.right-side-soon img:hover{
+    opacity: 0.5;
+}
+
+.right-side-soon,.left-side-soon{
+ height:100%
+}
+
+.text-offer{
+    position:absolute;
+    top:40%;
+    left:30%;
+}
+.text-offer > h1{
+    text-transform: uppercase;
+    color: var(--maincolor);
+    font-weight: 700;
+}
+.text-offer > h3{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing:2px;
+}
+.text-ads2{
+
+    position:absolute;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 20px;
+    top:50%;
+    left:30%;
+}
+.text-ads1{
+
+    position:absolute;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 20px;
+    top:50%;
+    left:30%
+}
+
+/* offer section */
+
+/* comming soon */
+
+.left-side-soon  small{
+    font-weight: 600;
+}
+.left-side-soon  small span  
+    {
+     color: var(--maincolor);
+     font-weight: 500;
+}
+.left-side-soon  small i  
+    {
+     color: var(--maincolor);
+}
+
+.left-side-soon > h4{
+    font-weight: 700;
+
+}
+
+.left-side-soon > p{
+
+font-weight: 700;
+color:#212121 !important
+}
+.star{
+    color:#FFC600;
+}
+.star .gray{
+    color:#cccccc
+}
+.left-side-soon  .p-soon{
+    font-size: 13px;
+font-weight: normal;}
+
+.cart-soon,.show-more-soon {
+    background-color:var(--maincolor); 
+    font-size: 13px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    border:none;
+    padding:7px 15px
+ 
+}
+.cart-soon:hover ,.show-more-soon:hover, .send-contact:hover
+    {
+    background-color:#212121;
+    color:#fff;
+    border:none;
+}
+.show-more-soon{
+    font-size: 15px;
+    padding:12px
+
+}
+/* comming soon */
+
+
+/* review */
+
+.feed-back p{
+
+    font-size: 14px;
+    color:#424242;
+
+}
+.feed-back-img{
+
+    width:120px;
+    height:120px;
+}
+.quote-icon{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: var(--maincolor);
+    position: absolute;
+    bottom: 42%;
+    right: 31%;
+    background-color: #fff;
+    line-height: 3;
+}
+
+.text-review{
+    content: ' ';
+    border-left: 2px solid #eee;
+    height: 75px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.text-review:before{
+    content: ' ';
+    border-left: 3px solid var(--maincolor);
+    height: 26px;
+    position: absolute;
+    left: -3px;
+    top: 24px;
+}
+
+
+
+/* End review */
+
+
+/*  contact section */
+
+.contact{
+    background-color: #f6f7f8;
+
+}
+.bio-icon ul li a{
+    color:#212121;
+    padding:0
+}
+.bio-icon ul li a:hover{
+    color:var(--maincolor);
+}
+input::placeholder, textarea::placeholder{
+    text-transform: capitalize !important;
+}
+
+.send-contact{
+    background-color:var(--maincolor); 
+    font-size: 13px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    border:none;
+}
+
+.customer ul li a{
+
+    text-transform: uppercase;
+    color:#212121;
+    padding:0.8rem 4rem 0 0;
+   
+}
+
+.stay-connect h2, .customer h2 ,.about h2{
+    font-size: 20px;
+    text-transform:uppercase ;
+    font-weight: bold;
+    margin-bottom:40px;
+}
+.stay-connect p, .bio p, .about span{
+    font-size: 13px;
+}
+.stay-connect{
+    padding-top:28px
+}
+
+.stay{
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 0;
+}
+/* contact section */
