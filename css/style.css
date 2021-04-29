@@ -27,12 +27,14 @@ header{
 }
  a{
      color:#fff;
+     transition: 1s all;
+
  }
 header a:hover, header a:focus{
     color:#fff
 }
  a:hover, a:focus{
-     color:var(--maincolor)
+     color:var(--maincolor);
  }
 
 
@@ -295,8 +297,8 @@ left:0;
 
 
 .list-icon{
-    position:fixed;
-    top:40%;
+    position:absolute;
+    top:25%;
     left:0;
     z-index: 2;
     background-color: var(--maincolor); 
@@ -668,7 +670,6 @@ font-size: 28px;
  .title-counter h6,
  .title-best-offer h6,
  .title-coming-soon h6,
- .title-review h6,
  .title-contact p,
  .title-contact h6
 
@@ -733,11 +734,16 @@ font-size: 28px;
 .border-like{
     border:2px solid #cccccc;
     color:#4d4040 ;
+    box-shadow:1px 1px 5px 5px transparent, -1px -1px 5px 5px transparent;
+
 
 }
 .border-share:hover,
 .border-like:hover {
     border:1px solid var(--maincolor) !important;
+    box-shadow: 1px 1px 2px 1px var(--maincolor), -1px -1px 2px 1px var(--maincolor);
+
+    transition: 2.5s all;
 
 
 }
@@ -933,6 +939,9 @@ font-weight: normal;}
     padding:7px 15px
  
 }
+.coming-hover:hover{
+    transform: translateY(-15px);
+}
 .cart-soon:hover ,.show-more-soon:hover, .send-contact:hover
     {
     background-color:#212121;
@@ -949,7 +958,7 @@ font-weight: normal;}
 
 /* review */
 
-.feed-back p{
+.text-review p{
 
     font-size: 14px;
     color:#424242;
@@ -960,25 +969,26 @@ font-weight: normal;}
     width:120px;
     height:120px;
 }
+.items .card h6{
+    font-size: 14px;
+}
 .quote-icon{
     border-radius: 50%;
     height: 50px;
     width: 50px;
     color: var(--maincolor);
     position: absolute;
-    bottom: 42%;
-    right: 31%;
     background-color: #fff;
-    line-height: 3;
+    bottom: 46%;
+    right: 31%;
+    padding: 12px 15px;
 }
 
 .text-review{
-    content: ' ';
     border-left: 2px solid #eee;
     height: 75px;
     position: relative;
-    left: 0px;
-    top: 0px;
+  
 }
 .text-review:before{
     content: ' ';
@@ -990,6 +1000,9 @@ font-weight: normal;}
 }
 
 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: var(--maincolor);
+}
 
 /* End review */
 

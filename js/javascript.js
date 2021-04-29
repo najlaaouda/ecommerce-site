@@ -1,75 +1,146 @@
-var cat =[
-    {
-        "ID": "COO1",
-        "heading": "categories", 
-        "Image": "img/megamenu1.jpg",
-        "subtitle1": "woman clothing",
-        "subtitle2": "men clothing",
-        "subtitle3": "phone & accessories",
-        "subtitle4": "jewerly & watches",
-        "subtitle5": "bags"
 
-    },
- 
-    {
-        "ID": "COO2",
-        "heading": "categories", 
-        "Image": "img/megamenu1.jpg",
-        "subtitle1": "woman clothing",
-        "subtitle2": "men clothing",
-        "subtitle3": "phone & accessories",
-        "subtitle4": "jewerly & watches",
-        "subtitle5": "bags"
-
-    },
- 
-    {
-        "ID": "COO3",
-        "heading": "categories", 
-        "Image": "img/megamenu1.jpg",
-        "subtitle1": "woman clothing",
-        "subtitle2": "men clothing",
-        "subtitle3": "phone & accessories",
-        "subtitle4": "jewerly & watches",
-        "subtitle5": "bags"
-    },
-  
-    {
-        "ID": "COO4",
-        "heading": "categories", 
-        "Image": "img/megamenu1.jpg",
-        "subtitle1": "woman clothing",
-        "subtitle2": "men clothing",
-        "subtitle3": "phone & accessories",
-        "subtitle4": "jewerly & watches",
-        "subtitle5": "bags"
+debugger
+$(document).ready(function(){
+  var cat =[
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last1.jpg",
+"paragraph": "product",
 
 
-    }
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last2.jpg",
+"paragraph": "product",
+
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last3.jpg",
+"paragraph": "product",
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last4.jpg",
+"paragraph": "product",
+
+
+
+
+},
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last5.jpg",
+"paragraph": "product",
+
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last6.jpg",
+"paragraph": "product",
+
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last7.jpg",
+"paragraph": "product",
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last8.jpg",
+"paragraph": "product",
+
+
+
+
+},
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last9.jpg",
+"paragraph": "product",
+
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last10.jpg",
+"paragraph": "product",
+
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last11.jpg",
+"paragraph": "product",
+
+
+},
+
+{
+"ID": "COO4",
+"heading": " 32.05 egp", 
+"Image": "img/products-sug/last12.jpg",
+"paragraph": "product",
+
+
+
+}
 ];
 
 var txt = "";
-  for (var i=0;i<cat.length; i++) {
 
-    txt += `<div>
-    <a href="#" class="nav-link">
-        <img src="${cat[i].Image}" alt="image" class="w-100">
-    </a>
-    <div class="dropdown-divider mx-3"></div>
-    <div class="dropdown-header text-uppercase">categories</div>
-    <a href="#" class="dropdown-item py-1">${cat[i].subtitle1}</a>
-    <a href="#" class="dropdown-item py-1">${cat[i].subtitle2}</a>
-    <a href="#" class="dropdown-item py-1">${cat[i].subtitle3}</a>
-    <a href="#" class="dropdown-item py-1">${cat[i].subtitle4}</a>
-    <a href="#" class="dropdown-item py-1">${cat[i].subtitle5}</a>
+for (var i=0;i<cat.length; i++) {
+
+txt+=  ` <div class="col-md-1  col-4">
+<div class=" products-sug ">
+  <img class="card-img-top " src="${cat[i].Image}" alt="image-productp">
+   <div class=" px-1 pt-2">
+      <h4 class="price-sug-product "> ${cat[i].heading}</h4>
+      <p class=" text-sug-product "> ${cat[i].paragraph} </p>
+  </div>
 </div>
-`;
+</div>
+</div>`;
+
+document.getElementById("sug").innerHTML = txt;
+
+}
+});
 
 
-    
-//  document.getElementById("category-men").innerHTML = txt;
-      
-  }
 
 //    start advs sectoion
 
@@ -85,9 +156,12 @@ function mouseOut(x){
 
 }
 //   advs sectoion
+
 // Start Flip section
 
+
 $('.my-flipster').flipster();
+
 
 // End Flip section
 
@@ -114,4 +188,50 @@ $('#example').countdown({
 
 
 // review slider
+
+$('.owl-carousel').owlCarousel({
+
+  autoplay:true,
+  autoplayHoverPause:true,
+  lazyLoad:true,
+  margin:5,
+  stagePadding:5,
+  responsive:{
+      0:{
+          items:1,
+          dots:false
+      },
+   
+      960:{
+          items:3,
+          loop:true
+      },
+      1200:{
+          items:3,
+          dots:true,
+
+      },
+  }
+
+});
+
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
 
