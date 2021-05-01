@@ -1,5 +1,5 @@
 
-debugger
+
 $(document).ready(function(){
   var cat =[
 {
@@ -139,6 +139,7 @@ document.getElementById("sug").innerHTML = txt;
 
 }
 });
+
 
 
 

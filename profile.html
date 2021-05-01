@@ -18,12 +18,8 @@
     <title>E-commerce Site</title>
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/jquery.flipster.min.css">
-    <link rel="stylesheet" href="css/jquery.countdown.css">
     <link rel="icon" href="img/logos.jpeg">
     <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/profilestyle.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -134,7 +130,7 @@
                                     <div class="num-cart">25</div>
                                 </div>
                                 <div>
-                                    <a class=" nav-link p-0 pl-2  account" href="#">
+                                    <a class=" nav-link p-0 pl-2  account" href="mycart.html">
                                         my cart
                                     </a>
                                     <p class=" d-flex pl-2 text-account">32.5 egp</p>
@@ -378,108 +374,498 @@
     <!-- profile section -->
     <section class="profile py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <nav class=" side-menu-profile">
-                        <ul >
-                            <li class="nav-item">
-                                <a href="#" class="nav-link link-profile  "> <i
-                                        class="fas fa-angle-double-right mr-2"></i>
-                                    my account </a>
-                            </li>
-                            <div class="dropdown-divider  didiv-profile mx-4"></div>
-                            <li class="nav-item">
-                                <a href="orders.html" class="nav-link link-profile  "> <i
-                                        class="fas fa-angle-double-right mr-2"></i>
-                                    my orders </a>
-                            </li>
-                            <div class="dropdown-divider  didiv-profile mx-4"></div>
-                            <li class="nav-item">
-                                <a href="favorite.html" class="nav-link link-profile  "> <i
-                                        class="fas fa-angle-double-right mr-2"></i>
-                                    my favorites </a>
-                            </li>
-                            <div class="dropdown-divider  didiv-profile mx-4"></div>
-                            <li class="nav-item">
-                                <a href="notifaction.html" class="nav-link link-profile  "> <i
-                                        class="fas fa-angle-double-right mr-2"></i>
-                                    notification </a>
-                            </li>
-                            <div class="dropdown-divider  didiv-profile mx-4"></div>
-                        </ul>
-                    </nav>
+            <div class="row no-gutters">
+                <div class="col-sm-3 col-12">
+                    <div class="nav side-menu-profile flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                         <i class="fas fa-angle-double-right mr-2"></i>my account</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <i class="fas fa-angle-double-right mr-2"></i>my orders</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                       <i class="fas fa-angle-double-right mr-2"></i>my favorites
+                        </a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                        <i class="fas fa-angle-double-right mr-2"></i>notification 
+                        </a>
+                      </div>
+                    </div>
+                      <div class="col-md-9">
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <table class="table table-striped ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" colspan="4">Manage Account</th>
+                    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="header-table">
+                                        <th scope="row">account iD</th>
+                                        <td colspan="3">abc-125</td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">name</th>
+                                        <td colspan="2">amira assem</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">password</th>
+                                        <td colspan="2">***********</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">email</th>
+                                        <td colspan="2">amiraassem@gmail.com</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">shipping address</th>
+                                        <td colspan="2">125 abc st, cairo egypt</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">phone</th>
+                                        <td colspan="2">+02 123 456 222</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">job title</th>
+                                        <td colspan="2">front end developer</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">copmany</th>
+                                        <td colspan="2">senior steps</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">gender</th>
+                                        <td colspan="2">female</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                    <tr class="header-table">
+                                        <th scope="row">postal code</th>
+                                        <td colspan="2">110111</td>
+                                        <td><i class="fas fa-edit icon-edit"></i> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <table class="table table-striped ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" colspan="6">Manage orders</th>
+        
+                                    </tr>
+                                </thead>
+                                
+                                <tr>
+                                    <td colspan="3">
+        
+                                    </td>
+                                    <td >
+                                    <div class="dropdown float-right">
+                                        <button class="btn btn-secondary-order text-capitalize dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           all orders
+                                        </button>
+                                        
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">delivered</a>
+                                            <a class="dropdown-item" href="#">cancelled</a>
+                                            <a class="dropdown-item" href="#">awaiting time</a>
+                                        </div>
+                                    </td>
+                                    <td colspan="2" >
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination align-items-center justify-content-end mb-0">
+                                              <li class="page-item">
+                                              <span class="text-uppercase"> page:</span>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <i class="fas fa-caret-right"></i>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </td>
+        
+                                </tr>
+                               
+                                <tbody>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-1.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div> <i class="fas fa-calendar-alt mr-2"></i><span>25 jan 2021</span></div>
+                                            <div> <i class="fas fa-check-circle mr-2"></i><span>Delivered</span></div>
+        
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fas fa-info mr-2"></i><span>details</span></div>
+                                            <div><i class="fas fa-pound-sign mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-2.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div> <i class="fas fa-calendar-alt mr-2"></i><span>25 jan 2021</span></div>
+                                            <div> <i class="fas fa-check-circle mr-2"></i><span>Delivered</span></div>
+        
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fas fa-info mr-2"></i><span>details</span></div>
+                                            <div><i class="fas fa-pound-sign mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-3.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div> <i class="fas fa-calendar-alt mr-2"></i><span>25 jan 2021</span></div>
+                                            <div> <i class="fas fa-check-circle mr-2"></i><span>Delivered</span></div>
+        
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fas fa-info mr-2"></i><span>details</span></div>
+                                            <div><i class="fas fa-pound-sign mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-4.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div> <i class="fas fa-calendar-alt mr-2"></i><span>25 jan 2021</span></div>
+                                            <div> <i class="fas fa-check-circle mr-2"></i><span>Delivered</span></div>
+        
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fas fa-info mr-2"></i><span>details</span></div>
+                                            <div><i class="fas fa-pound-sign mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-5.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div> <i class="fas fa-calendar-alt mr-2"></i><span>25 jan 2021</span></div>
+                                            <div> <i class="fas fa-check-circle mr-2"></i><span>Delivered</span></div>
+        
+                                        </td>
+                                        <td class="text-center">
+                                            <div><i class="fas fa-info mr-2"></i><span>details</span></div>
+                                            <div><i class="fas fa-pound-sign mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td colspan="2"  >
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination align-items-center justify-content-end">
+                                                  <li class="page-item">
+                                                  <span class="text-uppercase"> page:</span>
+                                                  </li>
+                                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                  <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                              </nav>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+        
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <table class="table table-striped ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" colspan="6">favorites</th>
+        
+                                    </tr>
+                                </thead>
+                                
+                                <tr>
+                                    <td colspan="3">
+        
+                                    </td>
+                                
+                                    <td colspan="3" >
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination align-items-center justify-content-end mb-0">
+                                              <li class="page-item">
+                                              <span class="text-uppercase"> page:</span>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <i class="fas fa-caret-right"></i>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </td>
+        
+                                </tr>
+                               
+                                <tbody>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-1.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div ><i class="fas fa-angle-double-right mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                            <div> <i class="fas fa-heart mr-2"></i><span>favorites</span></div>
+        
+                                        </td>
+                                        <td  class="text-center">
+                                            <a href="#" class="nav-link text-capitalize btn-fav mx-4 mb-2"> buy now</a>
+                                            <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                           
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-2.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div ><i class="fas fa-angle-double-right mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                            <div> <i class="fas fa-heart mr-2"></i><span>favorites</span></div>
+        
+                                        </td>
+                                        <td  class="text-center">
+                                            <a href="#" class="nav-link text-capitalize btn-fav mx-4 mb-2"> buy now</a>
+                                            <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                           
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-3.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div ><i class="fas fa-angle-double-right mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                            <div> <i class="fas fa-heart mr-2"></i><span>favorites</span></div>
+        
+                                        </td>
+                                        <td  class="text-center">
+                                            <a href="#" class="nav-link text-capitalize btn-fav mx-4 mb-2"> buy now</a>
+                                            <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                           
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-4.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div ><i class="fas fa-angle-double-right mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                            <div> <i class="fas fa-heart mr-2"></i><span>favorites</span></div>
+        
+                                        </td>
+                                        <td  class="text-center">
+                                            <a href="#" class="nav-link text-capitalize btn-fav mx-4 mb-2"> buy now</a>
+                                            <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                           
+                                    </tr>
+                                    <tr class="header-table-order ">
+                                        <td>
+                                            <img src="img/orders/order-5.jpg" alt="order-img" class="w-100 order-img">
+                                        </td>
+                                        <td colspan="4">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <div ><i class="fas fa-angle-double-right mr-2"></i><span class="text-uppercase">200 egp</span></div>
+                                            <div> <i class="fas fa-heart mr-2"></i><span>favorites</span></div>
+        
+                                        </td>
+                                        <td  class="text-center">
+                                            <a href="#" class="nav-link text-capitalize btn-fav mx-4 mb-2"> buy now</a>
+                                            <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                           
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td colspan="2"  >
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination align-items-center justify-content-end">
+                                                  <li class="page-item">
+                                                  <span class="text-uppercase"> page:</span>
+                                                  </li>
+                                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                  <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                              </nav>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                            <table class="table table-striped ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" colspan="6">notifaction</th>
+        
+                                    </tr>
+                                </thead>
+                                
+                                <tr>
+                                    <td colspan="4">
+                                    </td>
+                                
+                                    <td colspan="2" >
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination align-items-center justify-content-end mb-0">
+                                              <li class="page-item">
+                                              <span class="text-uppercase"> page:</span>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <i class="fas fa-caret-right"></i>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </td>
+        
+                                </tr>
+                               
+                                <tbody>
+                                    <tr class="header-table-notify border">
+                                        <td colspan="5">
+                                        <i class="fas fa-bell mr-2"></i>
+                                          <span>new products</span>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis labore ut, dolor aliquid repudiandae voluptas corporis
+                                                beatae neque hic? Dolores?
+                                          </p>
+                                        </td> 
+                                        <td  class="text-center">
+                                        <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                       
+                                    </tr>
+                                    <tr class="header-table-notify border">
+                                        <td colspan="5">
+                                        <i class="fas fa-bell mr-2"></i>
+                                          <span>new offers</span>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis labore ut, dolor aliquid repudiandae voluptas corporis
+                                                beatae neque hic? Dolores?
+                                          </p>
+                                        </td> 
+                                        <td  class="text-center">
+                                        <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                       
+                                    </tr>
+                                    <tr class="header-table-notify border">
+                                        <td colspan="5">
+                                        <i class="fas fa-bell mr-2"></i>
+                                          <span>subscrib now</span>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis labore ut, dolor aliquid repudiandae voluptas corporis
+                                                beatae neque hic? Dolores?
+                                          </p>
+                                        </td> 
+                                        <td  class="text-center">
+                                        <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                       
+                                    </tr>
+                                    <tr class="header-table-notify border">
+                                        <td colspan="5">
+                                        <i class="fas fa-bell mr-2"></i>
+                                          <span>new year</span>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis labore ut, dolor aliquid repudiandae voluptas corporis
+                                                beatae neque hic? Dolores?
+                                          </p>
+                                        </td> 
+                                        <td  class="text-center">
+                                        <a href="#" class="nav-link delete-icon  p-0"><i class="fas fa-trash-alt mr-2 "></i> <small> remove</small></a></td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td colspan="2"  >
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination align-items-center justify-content-end">
+                                                  <li class="page-item">
+                                                  <span class="text-uppercase"> page:</span>
+                                                  </li>
+                                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                  <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                              </nav>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+                      </div>
+
+                      </div> <!-- end col-9-->
+                    
+
+
+
+
                 </div>
-                <div class="col-md-8">
-                    <table class="table table-striped ">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" colspan="4">Manage Account</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="header-table">
-                                <th scope="row">account iD</th>
-                                <td colspan="3">abc-125</td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">name</th>
-                                <td colspan="2">amira assem</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">password</th>
-                                <td colspan="2">***********</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">email</th>
-                                <td colspan="2">amiraassem@gmail.com</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">shipping address</th>
-                                <td colspan="2">125 abc st, cairo egypt</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">phone</th>
-                                <td colspan="2">+02 123 456 222</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">job title</th>
-                                <td colspan="2">front end developer</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">copmany</th>
-                                <td colspan="2">senior steps</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">gender</th>
-                                <td colspan="2">female</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                            <tr class="header-table">
-                                <th scope="row">postal code</th>
-                                <td colspan="2">110111</td>
-                                <td><i class="fas fa-edit icon-edit"></i> </td>
-                            </tr>
-                        </tbody>
-                    </table>
 
 
 
 
-                </div>
-            </div>
-        </div>
-
-
-
-
+         </div>
+      </div>
     </section>
     <!--  profile section -->
 
@@ -489,13 +875,146 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="title-suggested">
-                    <h4> suggested products</h4>
+                    <h4> last seen</h4>
                 </div>
 
             </div>
             <div class="su-pro mb-3"></div>
             <div class="row" id="sug">
 
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-1  col-4">
+                    <div class=" products-sug ">
+                      <img class="card-img-top " src="img/products-sug/last1.jpg" alt="image-productp">
+                       <div class=" px-1 pt-2">
+                          <h4 class="price-sug-product "> 32.05 egp</h4>
+                          <p class=" text-sug-product "> product </p>
+                      </div>
+                  </div>
+                </div>
+                    <!--end 2 -->
+                    <div class="col-md-1  col-4">
+                        <div class=" products-sug ">
+                          <img class="card-img-top " src="img/products-sug/last2.jpg" alt="image-productp">
+                           <div class=" px-1 pt-2">
+                              <h4 class="price-sug-product "> 32.05 egp</h4>
+                              <p class=" text-sug-product "> product </p>
+                          </div>
+                        </div>
+                        </div>
+              <!-- end 2 -->
+                      <!--end 3 -->
+                      <div class="col-md-1  col-4">
+                        <div class=" products-sug ">
+                          <img class="card-img-top " src="img/products-sug/last3.jpg" alt="image-productp">
+                           <div class=" px-1 pt-2">
+                              <h4 class="price-sug-product "> 32.05 egp</h4>
+                              <p class=" text-sug-product "> product </p>
+                          </div>
+                        </div>
+                        </div>
+              <!-- end 3 -->
+                          <!--end 3 -->
+                          <div class="col-md-1  col-4">
+                            <div class=" products-sug ">
+                              <img class="card-img-top " src="img/products-sug/last4.jpg" alt="image-productp">
+                               <div class=" px-1 pt-2">
+                                  <h4 class="price-sug-product "> 32.05 egp</h4>
+                                  <p class=" text-sug-product "> product </p>
+                              </div>
+                            </div>
+                            </div>
+                  <!-- end 3 -->
+                              <!--end 3 -->
+                              <div class="col-md-1  col-4">
+                                <div class=" products-sug ">
+                                  <img class="card-img-top " src="img/products-sug/last5.jpg" alt="image-productp">
+                                   <div class=" px-1 pt-2">
+                                      <h4 class="price-sug-product "> 32.05 egp</h4>
+                                      <p class=" text-sug-product "> product </p>
+                                  </div>
+                                </div>
+                                </div>
+                      <!-- end 3 -->
+                                  <!--end 3 -->
+                                  <div class="col-md-1  col-4">
+                                    <div class=" products-sug ">
+                                      <img class="card-img-top " src="img/products-sug/last6.jpg" alt="image-productp">
+                                       <div class=" px-1 pt-2">
+                                          <h4 class="price-sug-product "> 32.05 egp</h4>
+                                          <p class=" text-sug-product "> product </p>
+                                      </div>
+                                    </div>
+                                    </div>
+                          <!-- end 3 -->
+                                      <!--end 3 -->
+                      <div class="col-md-1  col-4">
+                        <div class=" products-sug ">
+                          <img class="card-img-top " src="img/products-sug/last7.jpg" alt="image-productp">
+                           <div class=" px-1 pt-2">
+                              <h4 class="price-sug-product "> 32.05 egp</h4>
+                              <p class=" text-sug-product "> product </p>
+                          </div>
+                        </div>
+                        </div>
+              <!-- end 3 -->
+                          <!--end 3 -->
+                          <div class="col-md-1  col-4">
+                            <div class=" products-sug ">
+                              <img class="card-img-top " src="img/products-sug/last8.jpg" alt="image-productp">
+                               <div class=" px-1 pt-2">
+                                  <h4 class="price-sug-product "> 32.05 egp</h4>
+                                  <p class=" text-sug-product "> product </p>
+                              </div>
+                            </div>
+                            </div>
+                  <!-- end 3 -->
+                              <!--end 3 -->
+                              <div class="col-md-1  col-4">
+                                <div class=" products-sug ">
+                                  <img class="card-img-top " src="img/products-sug/last9.jpg" alt="image-productp">
+                                   <div class=" px-1 pt-2">
+                                      <h4 class="price-sug-product "> 32.05 egp</h4>
+                                      <p class=" text-sug-product "> product </p>
+                                  </div>
+                                </div>
+                                </div>
+                      <!-- end 3 -->
+                                  <!--end 3 -->
+                                  <div class="col-md-1  col-4">
+                                    <div class=" products-sug ">
+                                      <img class="card-img-top " src="img/products-sug/last10.jpg" alt="image-productp">
+                                       <div class=" px-1 pt-2">
+                                          <h4 class="price-sug-product "> 32.05 egp</h4>
+                                          <p class=" text-sug-product "> product </p>
+                                      </div>
+                                    </div>
+                                    </div>
+                          <!-- end 3 -->
+                                      <!--end 3 -->
+                      <div class="col-md-1  col-4">
+                        <div class=" products-sug ">
+                          <img class="card-img-top " src="img/products-sug/last11.jpg" alt="image-productp">
+                           <div class=" px-1 pt-2">
+                              <h4 class="price-sug-product "> 32.05 egp</h4>
+                              <p class=" text-sug-product "> product </p>
+                          </div>
+                        </div>
+                        </div>
+              <!-- end 3 -->
+                          <!--end 3 -->
+                          <div class="col-md-1  col-4">
+                            <div class=" products-sug ">
+                              <img class="card-img-top " src="img/products-sug/last12.jpg" alt="image-productp">
+                               <div class=" px-1 pt-2">
+                                  <h4 class="price-sug-product "> 32.05 egp</h4>
+                                  <p class=" text-sug-product "> product </p>
+                              </div>
+                            </div>
+                            </div>
+                  <!-- end 3 -->
             </div>
         </div>
 
@@ -613,10 +1132,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.flipster.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/javascript.js"></script>
 <script>
    
