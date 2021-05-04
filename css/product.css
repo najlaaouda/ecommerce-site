@@ -1,0 +1,201 @@
+:root{
+    --maincolor:#7fb239;
+}
+
+.product-card{
+    border:0;
+    
+}
+.product-card img{
+    border-radius: 10px;
+}
+.opacy{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.green{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:var(--maincolor);
+}
+
+/* Related product */
+.rel-product{
+    font-size: 14px;
+    color:#8b8b8b ;
+    line-height: 1.6;
+}
+
+.related-imges{
+border-radius: 12px;
+
+}
+.related-card-product{
+    border:none;
+    border-radius: 0;
+    border-top-left-radius: 12px;
+    box-shadow:0px 5px 8px 0px  var(--maincolor);
+}
+
+.related-card-product img:hover{
+opacity: 0.5;
+}
+.related-card-product:hover{
+
+    transform: translateY(-10px);
+}
+/* end related product */
+
+
+
+/* Right Side---------
+---------------------- */
+
+/* sup category */
+
+.sup-category{
+margin-top:20px ;
+font-size: 18px;
+font-weight: 600;
+text-transform: uppercase;
+
+}
+.women-top{
+    padding-top: 35px;
+}
+.nav-women{
+    list-style: none;
+}
+.women-side a{
+
+    color:#646464 ;
+    text-transform: uppercase;
+}
+
+.women-side{
+
+    margin-top: 10px;
+}
+
+/*  End sup category */
+
+/*   filter by colors */
+
+
+.color-blue{
+    background-color:#475984;
+}
+.color-brown{
+    background-color:#8a2454;
+}
+.color-pink{
+    background-color:#bf6989;
+}
+.color-pink2{
+    background-color:#9a54d8;
+}
+.color-light-green{
+    background-color:#675f52;
+}
+.color-black{
+    background-color:#050505;
+}
+.color-light-brown{
+    background-color:#d5b47b;
+}
+.color-dark-brown
+{
+    background-color:#8b4513;
+}
+.color-red
+{
+    background-color:#800000;
+}
+
+.color-blue1{
+    background-color:#ffa07a;
+}
+.color-brown1{
+    background-color:#e9967a;
+}
+.color-pink1{
+    background-color:#dc143c;
+}
+.color-pink21{
+    background-color:#ffd700;
+}
+.color-light-green1{
+    background-color:#ff8c00;
+}
+.color-black1{
+    background-color:#82ae46;
+}
+.color-light-brown1{
+    background-color:#66cdaa;
+}
+.color-dark-brown1
+{
+    background-color:#008080;
+}
+.color-red1
+{
+    background-color:#c71585;
+}
+.color a:hover{
+    outline: 1px solid var(--maincolor);
+    outline-offset: 3px;
+
+
+}
+/*  end filter by colors */
+
+/* size */
+.text-size{
+    text-transform: uppercase;
+    color:#212121;
+    font-weight: 700;
+    border:1px solid #bebebe;
+    text-decoration: none;
+    padding:3px 5px
+}
+.active .text-size{
+    border:2px solid var(--maincolor) !important;
+    color:var(--maincolor)
+}
+.text-size:hover{
+    text-decoration: none;
+    border:2px solid var(--maincolor);
+
+}
+.form-check-label{
+color:#646464;
+font-size: 17px;
+text-transform: capitalize;
+
+}
+
+/* End size */
+
+
+
+/* related product */
+.title-last-item{
+    font-size: 18px;
+    font-weight:600;
+}
+
+.text-last-item{
+    font-size: 17px;
+}
+
+.active .act {
+
+    color:var(--maincolor)
+}
+
+/* End Related product */
+
+/* End Right Side-------
+------------------------ */

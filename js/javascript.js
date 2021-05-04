@@ -138,6 +138,8 @@ txt+=  ` <div class="col-md-1  col-4">
 document.getElementById("sug").innerHTML = txt;
 
 }
+
+
 });
 
 
@@ -232,7 +234,9 @@ $('.owl-carousel').owlCarousel({
       }, false);
     });
   }, false);
+
+
+
+
 })();
-
-
 

@@ -46,7 +46,14 @@
 
 
 /* start table */
-
+.ee{
+    background: #fff;
+border: 0 !important;
+border-collapse: collapse !important;
+}
+.table{
+    overflow: hidden;
+}
 .table .thead-dark th{
    background-color: var(--maincolor) !important;
    border-color: transparent;
@@ -111,6 +118,11 @@ input[type="number"]{
 tfoot{
     background-color: #f1f1f1;
 }
+
+ tfoot  td{
+     border-top: 0;
+    border-right:1px solid #ddd
+}
 .confirm{
 
     background-color: var(--maincolor);
@@ -159,41 +171,22 @@ tfoot{
     color:#cccccc
 }
 
-.carousel-indicatores {
-    position: absolute;
-    right: -80px;
+.carousel-indicators {
+    left: 150px;
     top:-46px;
     z-index: 15;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    z-index: 15;
-    list-style: none;
+  
 }
 
-.carousel-indicatores li {
-    box-sizing: content-box;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
+.carousel-indicators li {
+   
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #D6D6D6;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity 0.6s ease;
+  
   }
-  .carousel-indicatores .active {
+  .carousel-indicators .active {
     opacity: 1;
     background-color: var(--maincolor);
 }
@@ -211,7 +204,7 @@ tfoot{
 
 .offer-item-last{
     position: absolute;
-    top: 25px;
+    top: 24px;
     left: 0;
     color: #fff;
     z-index: 12;
