@@ -23,8 +23,11 @@
     <link rel="stylesheet" href="css/profilestyle.css">
     <link rel="stylesheet" href="css/registeration.css">
     <link rel="stylesheet" href="css/cart.css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <link rel="stylesheet" href="css/jquery-ui.theme.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/style.css">
+   
 </head>
 
 <body>
@@ -375,89 +378,15 @@
     <!-- section 1 -->
     <section class="products-category py-4">
         <div class="container">
-            <!-- top-sec -->
             <div class="row">
-                <div class="col-md-3 col-12 women-top">
+                <div class="col-md-3 col-12 ">
+                 <!-- sub category -->
                     <div class="row no-gutters">
-                        <div class="title-suggested">
+                        <div class="title-suggested top-women">
                             <h4> woman:</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
-                </div>
-
-                <div class="col-md-9 col-12">
-                    <div class="row">
-                        <div class="col-md-2 my-3 mt-md-0 d-flex align-items-center justify-content-between">
-                            <a href="#" class="nav-link bg-dark  mr-2 "><i class="fas fa-arrow-left"></i></a>
-                            <a href="#" class="nav-link bg-primary"><i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <!-- newest -->
-                        <div class="col-md-3 my-3 mt-md-0 d-flex align-items-center justify-content-between">
-                            <p class="text-uppercase mb-0">sort by:</p>
-                            <div class="dropdown border drop-newest">
-                                <button class="btn text-capitalize dropdown-toggle" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    newest
-                                </button>
-                                <div class="dropdown-menu search-menu-list" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">oldest</a>
-                                    <a class="dropdown-item" href="#">newest</a>
-                                    <a class="dropdown-item" href="#">oldest</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- newest -->
-                        <div class="col-md-2"></div>
-                        <!-- show -->
-                        <div class="col-md-2  my-3 mt-md-0 d-flex align-items-center justify-content-between">
-                            <p class="text-uppercase mb-0 mr-2">show:</p>
-                            <div class="dropdown border drop-newest">
-                                <button class="btn text-capitalize dropdown-toggle" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    10
-                                </button>
-                                <div class="dropdown-menu search-menu-list" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">10</a>
-                                    <a class="dropdown-item" href="#">30</a>
-                                    <a class="dropdown-item" href="#">50</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- pagination -->
-                        <div class="col-md-3 my-3 mt-md-0">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination align-items-center justify-content-end mb-0">
-                                    <li class="page-item">
-                                        <span class="text-uppercase"> page:</span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <i class="fas fa-caret-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- pagination -->
-
-
-
-                    </div>
-                    <div class="dropdown-divider su-pro"></div>
-                </div>
-
-            </div>
-            <!-- top sec -->
-
-            <div class="row">
-                <div class="col-md-3">
-
                     <h4 class="sup-category ">sup categories</h4>
                     <ul class="nav-women">
                         <li class="women-side">
@@ -485,192 +414,29 @@
                             <a href="#" class="nav-link p-0">jewelry & watches</a>
                         </li>
                     </ul>
-
-                    <!-- price -->
-                    <div>
-                        <div class="row no-gutters">
-                            <div class="title-suggested pt-3">
-                                <h4> filter by price:</h4>
+                   <!--  end sub category -->
+                          <!-- price -->
+                          <div>
+                            <div class="row no-gutters">
+                                <div class="title-suggested pt-3">
+                                    <h4> filter by price:</h4>
+                                </div>
                             </div>
+                            <div class="su-pro"></div>
+                    
+                            <p>
+                                <label for="amount"></label>
+                                <input type="text" id="amount" readonly >
+                              </p>
+                               
+                              <div id="slider-range"></div>
+                              
                         </div>
-                        <div class="su-pro"></div>
-                        <div class="slider-price d-flex align-items-center my-4">
-                            <span class="font-weight-normal small text-muted mr-2">$0</span>
-                            <form class="multi-range-field w-100 mb-1">
-                                <input id="multi" class="multi-range" type="range" />
-                            </form>
-                            <span class="font-weight-normal small text-muted ml-2">$100</span>
-                        </div>
-                    </div>
-                    <!-- price -->
+                        <!-- price -->
 
-                </div>
-
-                <!-- card 1 -->
-                <div class="col-md-3 col-12  pt-3">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item1.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <h5 class="offer-item-last ">-20%</h5>
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end card1 -->
-
-
-                <!-- card2 -->
-                <div class="col-md-3 col-12  pt-3">
-
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item2.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <span class="title-last-item">35.5 egp</span>
-
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
-
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End card2 -->
-
-
-                <!-- card 3 -->
-                <div class="col-md-3 col-12  pt-3">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item3.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <h5 class="offer-item-last ">-20%</h5>
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End card3 -->
-            </div>
-        </div>
-    </section>
-    <!-- End section 1 -->
-    <!-- section 2 -->
-    <section class="products-category">
-        <div class="container">
-            <div class="row">
-                <!-- Left side -->
-                <div class="col-md-3 col-12 ">
-                     <!-- color -->
+                        <!-- color -->
                      <div class="row no-gutters">
-                        <div class="title-suggested">
+                        <div class="title-suggested pt-5">
                             <h4> filter by color:</h4>
                         </div>
                     </div>
@@ -745,73 +511,87 @@
                     </div>
                     <!-- End group2 -->
                     <!-- end color -->
-
+                    
                     <!-- size -->
                     <div class="row no-gutters">
-                        <div class="title-suggested pt-4 ">
+                        <div class="title-suggested pt-5 ">
                             <h4> filter by size:</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
 
-                    <ul class="nav mt-4 justify-content-between ">
-                        <li class="active"><a href="#" class="  text-size">xs</a> </li>
-                        <li class="active"><a href="#" class="  text-size">sm</a> </li>
-                        <li><a href="#" class="  text-size">sl</a> </li>
-                        <li><a href="#" class="  text-size">xl</a> </li>
-                        <li><a href="#" class="  text-size">2x</a> </li>
-                        <li><a href="#" class="  text-size">3x</a> </li>
+                    <ul class="nav mt-4   justify-content-between  "  id="Sizing"> 
+                        <li ><a href="#" class=" text-size size">xs</a> </li>
+                        <li ><a href="#" class=" text-size">sm</a> </li>
+                        <li ><a href="#" class="  text-size">sl</a> </li>
+                        <li ><a href="#" class="  text-size">xl</a> </li>
+                        <li  ><a href="#" class="  text-size">2x</a> </li>
+                        <li ><a href="#" class="text-size">3x</a> </li>
                     </ul>
-                    <div class="mt-4">
+                    <div class="mt-4 scrol">
                         <h6 class="font-weight-bold mt-2">More:</h6>
 
                         <div class="form-check mt-3 ">
-                            <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> one size
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="one">
+                            <label class="form-check-label ml-2" for="one"> one size
                             </label>
                         </div>
                         <div class="form-check mt-2 ">
-                            <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> free size
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="free">
+                            <label class="form-check-label ml-2" for="free"> free size
                             </label>
                         </div>
                         <div class="form-check mt-2 ">
-                            <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> UK 30
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="UK">
+                            <label class="form-check-label ml-2" for="UK"> UK 30
                             </label>
                         </div>
                         <div class="form-check mt-2 ">
-                            <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> UK 32
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="UK32">
+                            <label class="form-check-label ml-2" for="UK32"> UK 32
                             </label>
                         </div>
+                    
                     </div>
 
                     <!-- size -->
-
-                    <!-- size -->
+                    
+                    <!-- brand -->
                     <div class="row no-gutters">
-                        <div class="title-suggested pt-4">
+                        <div class="title-suggested pt-5">
                             <h4> filter by brand:</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
-
-
-                    <div class="mt-4">
+                    <div class="mt-4 scrol">
                         <div class="form-check mt-2 ">
-                            <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> nike
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="nike">
+                            <label class="form-check-label ml-2" for="nike"> nike
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="adidas">
+                            <label class="form-check-label ml-2" for="adidas"> adidas
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="polo">
+                            <label class="form-check-label ml-2" for="polo"> polo
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept" id="lacost">
+                            <label class="form-check-label ml-2" for="lacost"> lacost
                             </label>
                         </div>
                         <div class="form-check mt-2 ">
                             <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> adidas
+                            <label class="form-check-label ml-2"> lacost
                             </label>
                         </div>
                         <div class="form-check mt-2 ">
                             <input class="form-check-input mt-0" type="checkbox" name="accept">
-                            <label class="form-check-label ml-2"> polo
+                            <label class="form-check-label ml-2"> lacost
                             </label>
                         </div>
                         <div class="form-check mt-2 ">
@@ -821,185 +601,16 @@
                         </div>
                     </div>
 
-                    <!-- size -->
-
-                </div>
-
-                <!-- End Left side -->
-                <!-- card1 -->
-                <div class="col-md-3 col-12 mt-3 mt-md-0">
-
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item4.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <span class="title-last-item">35.5 egp</span>
-
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
-
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End card1 -->
-                <!-- card2 -->
-                <div class="col-md-3 col-12">
-
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item5.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <span class="title-last-item">35.5 egp</span>
-
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
-
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End card2 -->
-
-                <!-- card 3 -->
-                <div class="col-md-3 col-12">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item6.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <h5 class="offer-item-last ">-20%</h5>
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End card3 -->
-            </div>
-        </div>
-    </section>
-    <!-- End section 2 -->
-
-
-    <!-- section 3 -->
-    <section class="products-category">
-        <div class="container">
-            <div class="row">
-                <!-- Left side -->
-                <div class="col-md-3 col-12  ">
-
-                    <!-- shop -->
-                    <div class="row no-gutters">
-                        <div class="title-suggested pt-4 ">
+                    <!-- brand -->
+                     <!-- shop -->
+                     <div class="row no-gutters">
+                        <div class="title-suggested pt-5 ">
                             <h4> filter by shop:</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
 
-                    <div class="mt-4">
+                    <div class="mt-4 scrol">
                         <div class="form-check mt-3 ">
                             <input class="form-check-input mt-0" type="checkbox" name="accept">
                             <label class="form-check-label ml-2"> zara
@@ -1020,20 +631,61 @@
                             <label class="form-check-label ml-2"> club
                             </label>
                         </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> zara
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2">kiki riky
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> brand
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> club
+                            </label>
+                        </div>
+                        
                     </div>
 
                     <!-- shop -->
+                    
 
                     <!-- gender -->
                     <div class="row no-gutters">
-                        <div class="title-suggested pt-4">
+                        <div class="title-suggested pt-5">
                             <h4> filter by gender:</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
 
-
-                    <div class="mt-4">
+                    <div class="mt-4 scrol">
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> women
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> girls
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> men
+                            </label>
+                        </div>
+                        <div class="form-check mt-2 ">
+                            <input class="form-check-input mt-0" type="checkbox" name="accept">
+                            <label class="form-check-label ml-2"> boy's
+                            </label>
+                        </div>
                         <div class="form-check mt-2 ">
                             <input class="form-check-input mt-0" type="checkbox" name="accept">
                             <label class="form-check-label ml-2"> women
@@ -1057,223 +709,56 @@
                     </div>
 
                     <!-- gender -->
+
                     <!-- offer -->
+
                     <div class="row no-gutters">
-                        <div class="title-suggested pt-4">
-                            <h4> filter by gender:</h4>
+                        <div class="title-suggested pt-5">
+                            <h4> filter by offer:</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
+                    <div id="content">
                     <ul class="nav-women mt-4">
-                        <li class="women-side active">
-                            <a href="#" class="nav-link act p-0 "><i class="fas fa-angle-right "></i>
-                                10% off</a>
+                        <li class="women-side select ">
+                            <a href="#" class="nav-link act p-0 v">
+                             10% off</a>
+                        <!-- <i class="fas fa-angle-right "></i> -->
                         </li>
                         <li class="women-side">
-                            <a href="#" class="nav-link p-0 ">20% off</a>
+                            <a href="#" class=" x nav-link p-0  ">20% off</a>
                         </li>
                         <li class="women-side">
-                            <a href="#" class="nav-link p-0 ">30% off</a>
+                            <a href="#" class=" x nav-link p-0 ">30% off</a>
                         </li>
                         <li class="women-side">
-                            <a href="#" class="nav-link p-0 ">40% off</a>
+                            <a href="#" class=" x nav-link p-0">40% off</a>
                         </li>
                         <li class="women-side">
-                            <a href="#" class="nav-link p-0 ">50% off</a>
+                            <a href="#" class=" x nav-link p-0 ">50% off</a>
                         </li>
                     </ul>
+                </div>
 
                     <!-- end offer -->
-
-                </div>
-
-                <!-- End Left side -->
-                <!-- card1 -->
-                <div class="col-md-3 col-12 mt-3 mt-md-0">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item7.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="offer-item-last ">-20%</h5>
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End card1 -->
-                <!-- card2 -->
-                <div class="col-md-3 col-12">
-
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item8.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <span class="title-last-item">35.5 egp</span>
-
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
-
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- End card2 -->
-
-                <!-- card 3 -->
-                <div class="col-md-3 col-12">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item9.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="offer-item-last green ">-20%</h5>
-                                <span class="title-last-item">35.5 egp</span>
-
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End card3 -->
-            </div>
-        </div>
-    </section>
-    <!-- End section 3-->
-
-    <!-- section 4 -->
-    <section class="products-category py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-12">
+                    <!-- top related -->
                     <div class="row no-gutters">
-                        <div class="title-suggested">
+                        <div class="title-suggested pt-4">
                             <h4>top related product</h4>
                         </div>
                     </div>
                     <div class="su-pro"></div>
-
-
-
-
-
- <!-- card1 -->
+                    <!-- card1 -->
                     <div class="card border-0  mt-4">
                         <div class="row   justify-content-between">
-                            <div class="col-4 p-0 ">
-                                <img src="img/relatedproduct/rel01.jpg" alt="related-img" class="card-img-top w-100 ">
+                            <div class="col-4 ">
+                                <img src="img/relatedproduct/rel02.jpg" alt="related-img" class="card-img-top w-100 ">
                             </div>
-                            <div class="col-8  ">
-                                <p class="text-last-item mb-2 font-weight-bold ">product name</p>
+                            <div class="col-8  p-0 ">
+                                <p class="text-last-item mb-2 font-weight-bold top-related ">product name</p>
                                 <span class="title-last-item  ">35.5 egp</span>
                                 <span><del class="item-sale ">40.5 egp</del></span>
-                                <div class="star-last mt-2">
+                                <div class="star-last ">
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
@@ -1288,14 +773,13 @@
                     <!-- card2 -->
                     <div class="card border-0  mt-4">
                         <div class="row   justify-content-between">
-                            <div class="col-4 p-0 ">
-                                <img src="img/relatedproduct/rel02.jpg" alt="related-img" class="card-img-top w-100 ">
+                            <div class="col-4 ">
+                                <img src="img/relatedproduct/rel03.jpg" alt="related-img" class="card-img-top w-100 ">
                             </div>
-                            <div class="col-8  ">
-                                <p class="text-last-item mb-2 font-weight-bold ">product name</p>
+                            <div class="col-8  p-0 ">
+                                <p class="text-last-item mb-2 font-weight-bold top-related ">product name</p>
                                 <span class="title-last-item  ">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <div class="star-last mt-2">
+                                <div class="star-last ">
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
@@ -1307,18 +791,17 @@
                         </div>
                     </div>
                     <!-- End card 2 -->
-
                     <!-- card3 -->
                     <div class="card border-0  mt-4">
                         <div class="row   justify-content-between">
-                            <div class="col-4 p-0 ">
-                                <img src="img/relatedproduct/rel01.jpg" alt="related-img" class="card-img-top w-100 ">
+                            <div class="col-4 ">
+                                <img src="img/relatedproduct/rel04.jpg" alt="related-img" class="card-img-top w-100 ">
                             </div>
-                            <div class="col-8  ">
-                                <p class="text-last-item mb-2 font-weight-bold ">product name</p>
+                            <div class="col-8  p-0 ">
+                                <p class="text-last-item mb-2 font-weight-bold top-related ">product name</p>
                                 <span class="title-last-item  ">35.5 egp</span>
                                 <span><del class="item-sale ">40.5 egp</del></span>
-                                <div class="star-last mt-2">
+                                <div class="star-last ">
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
@@ -1329,19 +812,18 @@
 
                         </div>
                     </div>
-                    <!-- End card 3 -->
 
+                    <!-- End card 3-->
                     <!-- card4 -->
                     <div class="card border-0  mt-4">
                         <div class="row   justify-content-between">
-                            <div class="col-4 p-0 ">
-                                <img src="img/relatedproduct/rel04.jpg" alt="related-img" class="card-img-top w-100 ">
+                            <div class="col-4 ">
+                                <img src="img/relatedproduct/rel01.jpg" alt="related-img" class="card-img-top w-100 ">
                             </div>
-                            <div class="col-8  ">
-                                <p class="text-last-item mb-2 font-weight-bold ">product name</p>
+                            <div class="col-8  p-0 ">
+                                <p class="text-last-item mb-2 font-weight-bold top-related ">product name</p>
                                 <span class="title-last-item  ">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <div class="star-last mt-2">
+                                <div class="star-last ">
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
                                     <i class="fas fa-star "></i>
@@ -1353,224 +835,58 @@
                         </div>
                     </div>
                     <!-- End card 4 -->
-
-                    <!-- card5 -->
-                    <div class="card border-0  mt-4">
-                        <div class="row   justify-content-between">
-                            <div class="col-4 p-0 ">
-                                <img src="img/relatedproduct/rel03.jpg" alt="related-img" class="card-img-top w-100 ">
-                            </div>
-                            <div class="col-8  ">
-                                <p class="text-last-item mb-2 font-weight-bold ">product name</p>
-                                <span class="title-last-item  ">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                            </div>
-
+                   <!-- card5 -->
+                   <div class="card border-0  mt-4">
+                    <div class="row   justify-content-between">
+                        <div class="col-4 ">
+                            <img src="img/relatedproduct/rel04.jpg" alt="related-img" class="card-img-top w-100 ">
                         </div>
+                        <div class="col-8  p-0 ">
+                            <p class="text-last-item mb-2 font-weight-bold top-related ">product name</p>
+                            <span class="title-last-item  ">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <div class="star-last ">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
                     <!-- End card 5 -->
-
-                    <!-- card 6 -->
-                    <div class="card border-0  mt-4">
-                        <div class="row   justify-content-between">
-                            <div class="col-4 p-0 ">
-                                <img src="img/relatedproduct/rel04.jpg" alt="related-img" class="card-img-top w-100 ">
-                            </div>
-                            <div class="col-8  ">
-                                <p class="text-last-item mb-2 font-weight-bold ">product name</p>
-                                <span class="title-last-item  ">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                            </div>
-
+                   <!-- card6 -->
+                   <div class="card border-0  mt-4">
+                    <div class="row   justify-content-between">
+                        <div class="col-4 ">
+                            <img src="img/relatedproduct/rel01.jpg" alt="related-img" class="card-img-top w-100 ">
                         </div>
-                    </div>
-                    <!-- End card 6-->
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-                <!-- card 1 -->
-                <div class="col-md-3 col-12  pt-3">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item1.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <h5 class="offer-item-last ">-20%</h5>
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
+                        <div class="col-8  p-0 ">
+                            <p class="text-last-item mb-2 font-weight-bold top-related ">product name</p>
+                            <span class="title-last-item  ">35.5 egp</span>
+                            <div class="star-last ">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <!-- end card1 -->
-
-
-                <!-- card2 -->
-                <div class="col-md-3 col-12  pt-3">
-
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item2.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <span class="title-last-item">35.5 egp</span>
-
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
-
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
+                   <!-- End card 6 -->
+ 
+                   <!-- top related -->
                 </div>
-                <!-- End card2 -->
+                <!-- end col-3 -->
 
-
-                <!-- card 3 -->
-                <div class="col-md-3 col-12  pt-3">
-                    <div class="card opacy product-card">
-                        <img src="img/product category/item3.jpg" class="card-img-top w-100 " alt="">
-                        <div class="card-body px-3 pt-3">
-                            <div class="card-title">
-                                <h5 class="new-item-last bg-dark">new</h5>
-                                <h5 class="offer-item-last ">-20%</h5>
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
-                                    <div class="star-last ">
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="fas fa-star "></i>
-                                        <i class="far fa-star gray"></i>
-                                    </div>
-                                </div>
-                                <div class="productes-img">
-                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
-                                        go to shop</a>
-                                </div>
-
-                                <div class="icon-productes mt-3 ">
-                                    <ul class="nav justify-content-between mx-2">
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
-                                                    class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
-                                                    class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" add-carts">
-                                            <a href="#" class="nav-link p-2 text-uppercase"><i
-                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End card3 -->
-            </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-9 col-12 my-3">
-                    <div class="dropdown-divider su-pro  pt-4"></div>
-
-                    <div class="row ">
+                <div class="col-md-9 col-12">
+                        <!-- header -->
+                     <div>                  
+                       <div class="row">
                         <div class="col-md-2 my-3 mt-md-0 d-flex align-items-center justify-content-between">
                             <a href="#" class="nav-link bg-dark  mr-2 "><i class="fas fa-arrow-left"></i></a>
                             <a href="#" class="nav-link bg-primary"><i class="fas fa-arrow-right"></i></a>
@@ -1629,493 +945,1211 @@
                         </div>
                         <!-- pagination -->
                     </div>
-                </div>
-                </div>
-    </section>
-    <!-- End section 4-->
-
-    <!-- Start Related product -->
-    <section class="related-product py-5">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="title-suggested">
-                    <h4> related products</h4>
-                </div>
-            </div>
-            <div class="su-pro"></div>
-            <!-- Group 1 -->
-            <div class="row  pt-4">
-                <!-- Item 1 -->
-                <div class="col-md-4 ">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last5.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
+                    <div class="dropdown-divider su-pro"></div>
+                     </div>
+                    <!-- end header -->
+                     <!-- section 1 -->
+                    <div class="row py-3 justify-content-between">
+                        <!-- card 1 -->
+                        <div class="col-md-4 col-12">
+                            <div class="card opacy product-card">
+                               <img src="img/product category/item1.jpg" class="card-img-top w-100 " alt="">
+                               <div class="card-body px-3 pt-3">
+                                   <div class="card-title">
+                                       <h5 class="new-item-last bg-dark">new</h5>
+                                       <h5 class="offer-item-last ">-20%</h5>
+                                       <span class="title-last-item">35.5 egp</span>
+                                       <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                       <div class="d-flex justify-content-between align-items-center ">
+                                           <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                           <div class="star-last ">
+                                               <i class="fas fa-star "></i>
+                                               <i class="fas fa-star "></i>
+                                               <i class="fas fa-star "></i>
+                                               <i class="fas fa-star "></i>
+                                               <i class="far fa-star gray"></i>
+                                           </div>
+                                       </div>
+                                       <div class="productes-img">
+                                           <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                               go to shop</a>
+                                       </div>
+                            
+                                       <div class="icon-productes mt-3 ">
+                                           <ul class="nav justify-content-between mx-2">
+                                               <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                   <i class="fas fa-heart"></i></a>
+                                                  </li>
+                                               <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                   <i  class="fas fa-share-alt"></i></a>
+                                                 </li>
+                                                   <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                   <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                  
+                                               </li>
+                            
+                                           </ul>
+                                       </div>
+                            
+                                   </div>
+                               </div>
                             </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-
-
-
-                                    </ul>
-                                </div>
-
                             </div>
-                        </div>
+                        <!-- End card1 -->
+                                                
+                        <!-- card2 -->
+                        <div class="col-md-4 col-12 ">
+                            <div class="card opacy product-card">
+                            <img src="img/product category/item2.jpg" class="card-img-top w-100 " alt="">
+                            <div class="card-body px-3 pt-3">
+                                <div class="card-title">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                        <span class="title-last-item">35.5 egp</span>
+                            
+                                        <div class="star-last ">
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="fas fa-star "></i>
+                                            <i class="far fa-star gray"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                            
+                                    <div class="productes-img">
+                                        <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                            go to shop</a>
+                                    </div>
+                            
+                                    <div class="icon-productes mt-3 ">
+                                        <ul class="nav justify-content-between mx-2">
+                                            <li>
+                                                <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                        class="fas fa-heart"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                        class="fas fa-share-alt"></i></a>
+                                            </li>
+                            
+                                            <li class=" add-carts">
+                                                <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                        class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                            </li>
+                            
+                                        </ul>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            </div>
+                            
+                            </div>
+                            <!-- End card2 -->
+                                                                          
+                        <!-- card3 -->
+                        <div class="col-md-4 col-12 ">
+                            <div class="card opacy product-card">
+                                <img src="img/product category/item3.jpg" class="card-img-top w-100 " alt="">
+                                <div class="card-body px-3 pt-3">
+                                    <div class="card-title">
+                                        <h5 class="new-item-last bg-dark">new</h5>
+                                        <h5 class="offer-item-last ">-20%</h5>
+                                        <span class="title-last-item">35.5 egp</span>
+                                        <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                            <div class="star-last ">
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="far fa-star gray"></i>
+                                            </div>
+                                        </div>
+                                        <div class="productes-img">
+                                            <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                go to shop</a>
+                                        </div>
+                             
+                                        <div class="icon-productes mt-3 ">
+                                            <ul class="nav justify-content-between mx-2">
+                                                <li>
+                                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                            class="fas fa-heart"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                            class="fas fa-share-alt"></i></a>
+                                                </li>
+                             
+                                                <li class=" add-carts">
+                                                    <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                </li>
+                             
+                                            </ul>
+                                        </div>
+                             
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <!-- End card3 -->
+                
+                                        
+            
+
 
                     </div>
-                </div>
-                <!-- End item 1 -->
+                     <!-- end section 1 -->
 
 
-                <!-- Item 2 -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
+                       <!-- section 2 -->
+                       <div class="row py-3 justify-content-between">
+                        <!-- card 1 -->
+                        <div class="col-md-4 col-12">
+                            <div class="card opacy product-card">
+                               <img src="img/product category/item4.jpg" class="card-img-top w-100 " alt="">
+                               <div class="card-body px-3 pt-3">
+                                   <div class="card-title">
+                                       <h5 class="new-item-last bg-dark">new</h5>
+                                       <span class="title-last-item">35.5 egp</span>
+                                       <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                       <div class="d-flex justify-content-between align-items-center ">
+                                           <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                           <div class="star-last ">
+                                               <i class="fas fa-star "></i>
+                                               <i class="fas fa-star "></i>
+                                               <i class="fas fa-star "></i>
+                                               <i class="fas fa-star "></i>
+                                               <i class="far fa-star gray"></i>
+                                           </div>
+                                       </div>
+                                       <div class="productes-img">
+                                           <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                               go to shop</a>
+                                       </div>
+                            
+                                       <div class="icon-productes mt-3 ">
+                                           <ul class="nav justify-content-between mx-2">
+                                               <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                   <i class="fas fa-heart"></i></a>
+                                                  </li>
+                                               <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                   <i  class="fas fa-share-alt"></i></a>
+                                                 </li>
+                                                   <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                   <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                  
+                                               </li>
+                            
+                                           </ul>
+                                       </div>
+                            
+                                   </div>
+                               </div>
+                            </div>
+                            </div>
+                        <!-- End card1 -->
+                                                
+                        <!-- card2 -->
+                        <div class="col-md-4 col-12 ">
+                            <div class="card opacy product-card">
+                                <img src="img/product category/item5.jpg" class="card-img-top w-100 " alt="">
+                                <div class="card-body px-3 pt-3">
+                                    <div class="card-title">
+                                        <h5 class="new-item-last bg-dark">new</h5>
+        
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <span class="title-last-item">35.5 egp</span>
+        
+                                            <div class="star-last ">
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="far fa-star gray"></i>
+                                            </div>
+                                        </div>
+                                        <p class="text-last-item mb-0 font-weight-bold">product name</p>
+        
+                                        <div class="productes-img">
+                                            <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                go to shop</a>
+                                        </div>
+        
+                                        <div class="icon-productes mt-3 ">
+                                            <ul class="nav justify-content-between mx-2">
+                                                <li>
+                                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                            class="fas fa-heart"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                            class="fas fa-share-alt"></i></a>
+                                                </li>
+        
+                                                <li class=" add-carts">
+                                                    <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                </li>
+        
+                                            </ul>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <!-- End card2 -->
+                                                                          
+                        <!-- card3 -->
+                        <div class="col-md-4 col-12 ">
+                            <div class="card opacy product-card">
+                                <img src="img/product category/item6.jpg" class="card-img-top w-100 " alt="">
+                                <div class="card-body px-3 pt-3">
+                                    <div class="card-title">
+                                        <h5 class="new-item-last bg-dark">new</h5>
+                                        <h5 class="offer-item-last ">-20%</h5>
+                                        <span class="title-last-item">35.5 egp</span>
+                                        <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                            <div class="star-last ">
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="far fa-star gray"></i>
+                                            </div>
+                                        </div>
+                                        <div class="productes-img">
+                                            <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                go to shop</a>
+                                        </div>
+        
+                                        <div class="icon-productes mt-3 ">
+                                            <ul class="nav justify-content-between mx-2">
+                                                <li>
+                                                    <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                            class="fas fa-heart"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                            class="fas fa-share-alt"></i></a>
+                                                </li>
+        
+                                                <li class=" add-carts">
+                                                    <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                            class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                </li>
+        
+                                            </ul>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <!-- End card3 -->
+                
+                                        
+            
+
+
+                       </div>
+                     <!-- end section 2 -->
+                   
+                           <!-- section 3 -->
+                           <div class="row py-3  justify-content-between">
+                            <!-- card 1 -->
+                            <div class="col-md-4 col-12">
+                                <div class="card opacy product-card">
+                                    <img src="img/product category/item7.jpg" class="card-img-top w-100 " alt="">
+                                    <div class="card-body px-3 pt-3">
+                                        <div class="card-title">
+                                            <h5 class="offer-item-last ">-20%</h5>
+                                            <h5 class="new-item-last bg-dark">new</h5>
+                                            <span class="title-last-item">35.5 egp</span>
+                                            <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+            
+                                            <div class="d-flex justify-content-between align-items-center ">
+                                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+            
+                                                <div class="star-last ">
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="far fa-star gray"></i>
+                                                </div>
+                                            </div>
+            
+                                            <div class="productes-img">
+                                                <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                    go to shop</a>
+                                            </div>
+            
+                                            <div class="icon-productes mt-3 ">
+                                                <ul class="nav justify-content-between mx-2">
+                                                    <li>
+                                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                                class="fas fa-heart"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                                class="fas fa-share-alt"></i></a>
+                                                    </li>
+            
+                                                    <li class=" add-carts">
+                                                        <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                    </li>
+            
+                                                </ul>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            <!-- End card1 -->
+                                                    
+                            <!-- card2 -->
+                            <div class="col-md-4 col-12 ">
+                                <div class="card opacy product-card">
+                                    <img src="img/product category/item8.jpg" class="card-img-top w-100 " alt="">
+                                    <div class="card-body px-3 pt-3">
+                                        <div class="card-title">
+            
+                                            <div class="d-flex justify-content-between align-items-center ">
+                                                <span class="title-last-item">35.5 egp</span>
+            
+                                                <div class="star-last ">
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="far fa-star gray"></i>
+                                                </div>
+                                            </div>
+                                            <p class="text-last-item mb-0 font-weight-bold">product name</p>
+            
+                                            <div class="productes-img">
+                                                <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                    go to shop</a>
+                                            </div>
+            
+                                            <div class="icon-productes mt-3 ">
+                                                <ul class="nav justify-content-between mx-2">
+                                                    <li>
+                                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                                class="fas fa-heart"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                                class="fas fa-share-alt"></i></a>
+                                                    </li>
+            
+                                                    <li class=" add-carts">
+                                                        <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                    </li>
+            
+                                                </ul>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                
+                                </div>
+                                <!-- End card2 -->
+                                                                              
+                            <!-- card3 -->
+                            <div class="col-md-4 col-12 ">
+                                <div class="card opacy product-card">
+                                    <img src="img/product category/item9.jpg" class="card-img-top w-100 " alt="">
+                                    <div class="card-body px-3 pt-3">
+                                        <div class="card-title">
+                                            <h5 class="offer-item-last green ">-20%</h5>
+                                            <span class="title-last-item">35.5 egp</span>
+            
+                                            <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                            <div class="d-flex justify-content-between align-items-center ">
+                                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                                <div class="star-last ">
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="fas fa-star "></i>
+                                                    <i class="far fa-star gray"></i>
+                                                </div>
+                                            </div>
+                                            <div class="productes-img">
+                                                <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                    go to shop</a>
+                                            </div>
+            
+                                            <div class="icon-productes mt-3 ">
+                                                <ul class="nav justify-content-between mx-2">
+                                                    <li>
+                                                        <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                                class="fas fa-heart"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                                class="fas fa-share-alt"></i></a>
+                                                    </li>
+            
+                                                    <li class=" add-carts">
+                                                        <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                                class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                    </li>
+            
+                                                </ul>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- End card3 -->
+                    
+                                            
+                
+    
+    
+                           </div>
+                         <!-- end section 3 -->
+
+
+                             <!-- section 4 -->
+                             <div class="row py-3 justify-content-between">
+                                <!-- card 1 -->
+                                <div class="col-md-4 col-12">
+                                    <div class="card opacy product-card">
+                                       <img src="img/product category/item4.jpg" class="card-img-top w-100 " alt="">
+                                       <div class="card-body px-3 pt-3">
+                                           <div class="card-title">
+                                               <h5 class="offer-item-last green ">-20%</h5>
+                                               <span class="title-last-item">35.5 egp</span>
+                                               <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                               <div class="d-flex justify-content-between align-items-center ">
+                                                   <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                                   <div class="star-last ">
+                                                       <i class="fas fa-star "></i>
+                                                       <i class="fas fa-star "></i>
+                                                       <i class="fas fa-star "></i>
+                                                       <i class="fas fa-star "></i>
+                                                       <i class="far fa-star gray"></i>
+                                                   </div>
+                                               </div>
+                                               <div class="productes-img">
+                                                   <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                       go to shop</a>
+                                               </div>
+                                    
+                                               <div class="icon-productes mt-3 ">
+                                                   <ul class="nav justify-content-between mx-2">
+                                                       <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                           <i class="fas fa-heart"></i></a>
+                                                          </li>
+                                                       <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                           <i  class="fas fa-share-alt"></i></a>
+                                                         </li>
+                                                           <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                           <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                          
+                                                       </li>
+                                    
+                                                   </ul>
+                                               </div>
+                                    
+                                           </div>
+                                       </div>
+                                    </div>
+                                    </div>
+                                <!-- End card1 -->
+                                                        
+                                <!-- card2 -->
+                                <div class="col-md-4 col-12 ">
+                                    <div class="card opacy product-card">
+                                        <img src="img/product category/item7.jpg" class="card-img-top w-100 " alt="">
+                                        <div class="card-body px-3 pt-3">
+                                            <div class="card-title">
+                                                <h5 class="offer-item-last green ">-20%</h5>     
+                                                 <span class="title-last-item">35.5 egp</span>
+                                                    <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                                    <div class="star-last ">
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="far fa-star gray"></i>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="productes-img">
+                                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                        go to shop</a>
+                                                </div>
+                
+                                                <div class="icon-productes mt-3 ">
+                                                    <ul class="nav justify-content-between mx-2">
+                                                        <li>
+                                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                                    class="fas fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                                    class="fas fa-share-alt"></i></a>
+                                                        </li>
+                
+                                                        <li class=" add-carts">
+                                                            <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                        </li>
+                
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    </div>
+                                    <!-- End card2 -->
+                                                                                  
+                                <!-- card3 -->
+                                <div class="col-md-4 col-12 ">
+                                    <div class="card opacy product-card">
+                                        <img src="img/product category/item2.jpg" class="card-img-top w-100 " alt="">
+                                        <div class="card-body px-3 pt-3">
+                                            <div class="card-title">
+                                                <h5 class="offer-item-last green ">-20%</h5>
+                                                <span class="title-last-item">35.5 egp</span>
+                                                <span><del class="item-sale font-weight-bold">40.5 egp</del></span>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                                    <div class="star-last ">
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="fas fa-star "></i>
+                                                        <i class="far fa-star gray"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="productes-img">
+                                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                                        go to shop</a>
+                                                </div>
+                
+                                                <div class="icon-productes mt-3 ">
+                                                    <ul class="nav justify-content-between mx-2">
+                                                        <li>
+                                                            <a href="#" class="nav-link px-2 py-1  border border-share"><i
+                                                                    class="fas fa-heart"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="nav-link px-2 py-1  border border-like"><i
+                                                                    class="fas fa-share-alt"></i></a>
+                                                        </li>
+                
+                                                        <li class=" add-carts">
+                                                            <a href="#" class="nav-link p-2 text-uppercase"><i
+                                                                    class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+                                                        </li>
+                
+                                                    </ul>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    </div>
+                                    <!-- End card3 -->
+                        
+                                                
+                    
+        
+        
+                               </div>
+                             <!-- end section 4 -->
+
+
+
+
+
+
+
+
+                      <!-- footer -->
+                      <div class="foot-pro">    
+                        <div class="dropdown-divider  pt-3"></div>
                         <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last17.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
+                         <div class="col-md-2 my-3 mt-md-0 d-flex align-items-center justify-content-between">
+                             <a href="#" class="nav-link bg-dark  mr-2 "><i class="fas fa-arrow-left"></i></a>
+                             <a href="#" class="nav-link bg-primary"><i class="fas fa-arrow-right"></i></a>
+                         </div>
+                         <!-- newest -->
+                         <div class="col-md-3 my-3 mt-md-0 d-flex align-items-center justify-content-between">
+                             <p class="text-uppercase mb-0">sort by:</p>
+                             <div class="dropdown border drop-newest">
+                                 <button class="btn text-capitalize dropdown-toggle" type="button"
+                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                     aria-expanded="false">
+                                     newest
+                                 </button>
+                                 <div class="dropdown-menu search-menu-list" aria-labelledby="navbarDropdown">
+                                     <a class="dropdown-item" href="#">oldest</a>
+                                     <a class="dropdown-item" href="#">newest</a>
+                                     <a class="dropdown-item" href="#">oldest</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- newest -->
+                         <div class="col-md-2"></div>
+                         <!-- show -->
+                         <div class="col-md-2  my-3 mt-md-0 d-flex align-items-center justify-content-between">
+                             <p class="text-uppercase mb-0 mr-2">show:</p>
+                             <div class="dropdown border drop-newest">
+                                 <button class="btn text-capitalize dropdown-toggle" type="button"
+                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                     aria-expanded="false">
+                                     10
+                                 </button>
+                                 <div class="dropdown-menu search-menu-list" aria-labelledby="navbarDropdown">
+                                     <a class="dropdown-item" href="#">10</a>
+                                     <a class="dropdown-item" href="#">30</a>
+                                     <a class="dropdown-item" href="#">50</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- pagination -->
+                         <div class="col-md-3 my-3 mt-md-0">
+                             <nav aria-label="Page navigation example">
+                                 <ul class="pagination align-items-center justify-content-end mb-0">
+                                     <li class="page-item">
+                                         <span class="text-uppercase"> page:</span>
+                                     </li>
+                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                     <li class="page-item">
+                                         <a class="page-link" href="#" aria-label="Next">
+                                             <i class="fas fa-caret-right"></i>
+                                         </a>
+                                     </li>
+                                 </ul>
+                             </nav>
+                         </div>
+                         <!-- pagination -->
+                     </div>
+                      </div>
+                     <!-- end footer -->
                 </div>
-                <!-- End item 2 -->
 
-                <!-- Item3  -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last21.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
 
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
 
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
 
 
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 3 -->
-
-            </div>
-            <!-- End Group 1 -->
-            <!-- Group 2 -->
-            <div class="row  pt-3">
-                <!-- Item 1 -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last8.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 1 -->
-
-
-                <!-- Item 2 -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last6.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 2 -->
-
-                <!-- Item3  -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last12.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 3 -->
-
-            </div>
-            <!-- End Group 2 -->
-
-            <!-- Group 3 -->
-            <div class="row  pt-3">
-                <!-- Item 1 -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last9.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 1 -->
-
-
-                <!-- Item 2 -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last11.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 2 -->
-
-                <!-- Item3  -->
-                <div class="col-md-4  mt-3 mt-md-0">
-                    <div class="card related-card-product  pb-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="img/relatedproduct/last7.jpg" alt="related-img"
-                                    class="card-img-top w-100 related-imges">
-                            </div>
-                            <div class="col-6 px-0  pt-2">
-                                <span class="title-last-item">35.5 egp</span>
-                                <span><del class="item-sale ">40.5 egp</del></span>
-                                <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
-                                <div class="star-last mt-2">
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="fas fa-star "></i>
-                                    <i class="far fa-star gray"></i>
-                                </div>
-                                <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
-
-                                <div class="icon-produces mt-3 ">
-                                    <ul class="nav ">
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1 border border-share">
-                                                <i class="fas fa-heart"></i></a>
-                                        </li>
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-share-alt"></i></a>
-                                        </li>
-
-                                        <li class=" mr-2">
-                                            <a href="#" class="nav-link px-2 py-1  border border-like">
-                                                <i class="fas fa-shopping-cart mr-1"></i></a>
-                                        </li>
-
-
-
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- End item 3 -->
-
-
-            </div>
-            <!-- End Group 3 -->
-
-
-            <div class="row no-gutters  pt-5 ">
-
-                <div>
-                    <a href="#" class="nav-link confirm">show more</a>
-                </div>
             </div>
         </div>
-
-
-
     </section>
-    <!-- End Related Produt -->
+    <!-- End section 1 -->
+    <!-- Start Related product -->
+<section class="related-product py-5">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="title-suggested">
+                <h4> related products</h4>
+            </div>
+        </div>
+        <div class="su-pro"></div>
+        <!-- Group 1 -->
+        <div class="row  pt-4">
+            <!-- Item 1 -->
+            <div class="col-md-4 ">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last5.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
 
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 1 -->
+
+
+            <!-- Item 2 -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last17.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 2 -->
+
+            <!-- Item3  -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last21.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 3 -->
+
+        </div>
+        <!-- End Group 1 -->
+        <!-- Group 2 -->
+        <div class="row  pt-3">
+            <!-- Item 1 -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last8.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 1 -->
+
+
+            <!-- Item 2 -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last6.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 2 -->
+
+            <!-- Item3  -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last12.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 3 -->
+
+        </div>
+        <!-- End Group 2 -->
+
+        <!-- Group 3 -->
+        <div class="row  pt-3">
+            <!-- Item 1 -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last9.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 1 -->
+
+
+            <!-- Item 2 -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last11.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 2 -->
+
+            <!-- Item3  -->
+            <div class="col-md-4  mt-3 mt-md-0">
+                <div class="card related-card-product  pb-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="img/relatedproduct/last7.jpg" alt="related-img"
+                                class="card-img-top w-100 related-imges">
+                        </div>
+                        <div class="col-6 px-0  pt-2">
+                            <span class="title-last-item">35.5 egp</span>
+                            <span><del class="item-sale ">40.5 egp</del></span>
+                            <p class="text-last-item mb-0 font-weight-bold mt-2">product name</p>
+                            <div class="star-last mt-2">
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="fas fa-star "></i>
+                                <i class="far fa-star gray"></i>
+                            </div>
+                            <p class="rel-product "> Lorem ipsum dolor sit dummy adipisicing .</p>
+
+                            <div class="icon-produces mt-3 ">
+                                <ul class="nav ">
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1 border border-share">
+                                            <i class="fas fa-heart"></i></a>
+                                    </li>
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-share-alt"></i></a>
+                                    </li>
+
+                                    <li class=" mr-2">
+                                        <a href="#" class="nav-link px-2 py-1  border border-like">
+                                            <i class="fas fa-shopping-cart mr-1"></i></a>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End item 3 -->
+
+
+        </div>
+        <!-- End Group 3 -->
+
+
+        <div class="row no-gutters  pt-5 ">
+
+            <div>
+                <a href="#" class="nav-link confirm">show more</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<!-- End Related Produt -->
+    
     <!-- start offer section -->
 
     <section class="offer py-5">
@@ -2416,14 +2450,76 @@
     </section>
 
     <!--end  contact section -->
-
     <script src="js/jquery-3.6.0.min.js"></script>
+
+<script>
+    //  Sizing Select
+var itemes = document.getElementById("sizing");
+
+if (itemes) {
+  var Items = content.getElementsByTagName('li');
+  var i;
+  for (i = 0; i < Items.length; i++) {
+    Items[i].addEventListener("click", function(e) {
+      if (!this.classList.contains('size')) {
+        clearActives(Items);
+        this.classList.toggle('size');
+        e.preventDefault();
+      }
+    });
+  }
+}
+    
+
+    
+  var content = document.getElementById("content");
+
+if (content) {
+  var Items = content.getElementsByTagName('li');
+  var i;
+  for (i = 0; i < Items.length; i++) {
+    Items[i].addEventListener("click", function(e) {
+      if (!this.classList.contains('select')) {
+        clearActives(Items);
+        this.classList.toggle('select');
+        e.preventDefault();
+      }
+    });
+  }
+}
+
+function clearActives(classlist) {
+  if (classlist) {
+    for (i = 0; i < classlist.length; i++) {
+      classlist[i].classList.remove('select');
+    }
+  }
+} 
+
+$( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 2000,
+      values: [ 0, 580 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val("EGP" + ui.values[ 0 ]  + " - EGP" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "EGP" + $( "#slider-range" ).slider( "values", 0 ) + 
+      " - EGP" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+
+</script>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/javascript.js"></script>
-    <script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+     <script src="js/javascript.js"></script>
 
+   
     </script>
 </body>
 

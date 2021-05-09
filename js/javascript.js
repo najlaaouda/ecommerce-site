@@ -1,6 +1,45 @@
 
 
 $(document).ready(function(){
+
+  $('html').niceScroll({
+    scrollspeed: 70,
+    mousescrollstep: 38,
+    cursorwidth: 15,
+    cursorborder: 0,
+    cursorcolor: '#0C090A',
+    cursorborderradius: 0,
+     autohidemode: false,
+    horizrailenabled: true,
+
+  });
+
+
+  $(".scrol").niceScroll({
+    scrollspeed: 70,
+    mousescrollstep: 38,
+    cursorwidth: 15,
+    cursorborder: 0,
+    cursorcolor: '#0C090A',
+    cursorborderradius: 0,
+     autohidemode: false,
+    horizrailenabled: true
+  });
+
+
+
+
+function clearActives(classlist) {
+  if (classlist) {
+    for (i = 0; i < classlist.length; i++) {
+      classlist[i].classList.remove('size');
+    }
+  }
+} 
+
+
+
+  
   var cat =[
 {
 "ID": "COO4",
@@ -218,7 +257,7 @@ $('.owl-carousel').owlCarousel({
 
 });
 
-(function() {
+$(function() {
   'use strict';
   window.addEventListener('load', function() {
     // Get the forms we want to add validation styles to
@@ -237,6 +276,7 @@ $('.owl-carousel').owlCarousel({
 
 
 
-
 })();
+
+
 

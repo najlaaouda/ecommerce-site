@@ -7,14 +7,25 @@ body{
 :root{
     --maincolor:#7fb239;
 }
+.nicescroll-rails div {
+    width: 15px !important;
+    background: var(--maincolor) !important;
+    border: none !important;
+    height: 30px;
+    border-radius: 0 !important;
+}
+.nicescroll-cursors{
+    height: 50px !important
+}
 
+.nicescroll-rails{
+box-shadow: inset 1px 1px 5px  gray;}
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
 /* End General */
-
 /* header */
 header{
 

@@ -1,7 +1,9 @@
 :root{
     --maincolor:#7fb239;
 }
-
+.top-women{
+    padding-top: 35px;
+}
 .product-card{
     border:0;
     
@@ -9,6 +11,7 @@
 .product-card img{
     border-radius: 10px;
 }
+
 .opacy{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -20,7 +23,41 @@
     left:0;
     background-color:var(--maincolor);
 }
+.scrol{
+    height:130px;
+    overflow-y: scroll;
+}
 
+
+
+/* price */
+.ui-slider-handle.ui-corner-all.ui-state-default{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--maincolor);
+    outline: none;
+    border: 0;
+    top:-7px
+}
+
+.ui-widget.ui-widget-content{
+    background-color: #c5c5c5;
+    border: 0;
+    height: 4px;
+}
+.ui-slider-range.ui-corner-all.ui-widget-header{
+
+    background-color: var(--maincolor);
+}
+input[type="text"]{
+    border:0;
+     color:var(--maincolor);
+      font-weight:bold;
+      margin-top: 20px;
+}
+
+/* price */
 /* Related product */
 .rel-product{
     font-size: 14px;
@@ -48,8 +85,12 @@ opacity: 0.5;
 }
 /* end related product */
 
-
-
+.top-related{
+    font-size: 14px;
+}
+/* .foot-pro{
+    margin-top: 130px;
+} */
 /* Right Side---------
 ---------------------- */
 
@@ -62,9 +103,7 @@ font-weight: 600;
 text-transform: uppercase;
 
 }
-.women-top{
-    padding-top: 35px;
-}
+
 .nav-women{
     list-style: none;
 }
@@ -160,15 +199,51 @@ text-transform: uppercase;
     text-decoration: none;
     padding:3px 5px
 }
-.active .text-size{
-    border:2px solid var(--maincolor) !important;
-    color:var(--maincolor)
-}
-.text-size:hover{
+.select{
+    color:var(--maincolor);
     text-decoration: none;
-    border:2px solid var(--maincolor);
 
 }
+.select a{
+    color:var(--maincolor);
+    text-decoration: none;
+
+}
+.select a::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.size{
+    color:var(--maincolor);
+    text-decoration: none;
+    border: 1px solid var(--maincolor);
+
+}
+.size a{
+    color:var(--maincolor);
+    text-decoration: none;
+
+}
+
+
+/* .active .text-size{
+    border:2px solid var(--maincolor) !important;
+    color:var(--maincolor)
+} */
+.text-size{
+    text-decoration: none;
+    /* border:2px solid var(--maincolor); */
+}
+.text-size:hover{
+text-decoration: none;
+color:#212121;
+
+}
+
 .form-check-label{
 color:#646464;
 font-size: 17px;
