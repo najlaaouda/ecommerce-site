@@ -7,7 +7,26 @@ body{
 :root{
     --maincolor:#7fb239;
 }
-.nicescroll-rails div {
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow:inset 1px 1px 5px  gray;
+    /* border-radius: 10px; */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--maincolor);
+    /* border-radius: 10px; */
+  }
+
+/* .nicescroll-rails div {
     width: 15px !important;
     background: var(--maincolor) !important;
     border: none !important;
@@ -24,7 +43,7 @@ box-shadow: inset 1px 1px 5px  gray;}
     padding:0;
     margin:0;
     box-sizing: border-box;
-}
+} */
 /* End General */
 /* header */
 header{
