@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--- Refresh document every 30 seconds --->
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <!--- Define the author of a page --->
+    <meta name="author" content="Najlaa ouda">
+    <!--- Define keywords for search engines --->
+    <meta name="keywords" content="woman clothes,men,kids">
+    <!--- Define a description of your web page  --->
+    <meta name="description" content="A store that sells everything a family needs">
+    <!-- Setting the viewport to make your website look good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <title>E-commerce Site</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/logos.jpeg">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/stylecustomcart.css">
+  <style>
+
+#gallery_01 img{border:2px solid white;}
+ 
+ /*Change the colour*/
+ .active img{border:2px solid #333 !important;}
+  </style>
+</head>
+
+<body>
+
+
+<!-- <img id="zoom_01" src='images/small/image1.png' data-zoom-image="images/large/image1.jpg"/> -->
+<!-- <img id="zoom_01" src='jj/images/small/image1.png' data-zoom-image="jj/images/large/image1.jpg"/> -->
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+
+
+    <img id="img_01" src="jj/images/small/image1.png" data-zoom-image="jj/images/large/image1.jpg"/>
+    <div id="zoom_03">
+  <a href="#" data-image="jj/images/small/image1.png" data-zoom-image="jj/images/large/image1.jpg">
+    <img id="img_01" src="jj/images/thumb/image1.jpg" />
+  </a>
+
+  <a href="#" data-image="jj/images/small/image2.png" data-zoom-image="jj/images/large/image2.jpg">
+    <img id="img_01" src="jj/images/thumb/image2.jpg" />
+  </a>
+
+  <a href="#" data-image="jj/images/small/image3.png" data-zoom-image="jj/images/large/image3.jpg">
+    <img id="img_01" src="jj/images/thumb/image3.jpg" />
+  </a>
+
+  <a href="#" data-image="jj/images/small/image4.png" data-zoom-image="jj/images/large/image4.jpg">
+    <img id="img_01" src="jj/images/thumb/image4.jpg" />
+  </a>
+
+</div>
+
+<!-- <img id="zoom_05" src="jj/images/small/image1.png" data-zoom-image="jj/images/large/image1.jpg"/> -->
+
+
+    <script src="jj/jquery-1.8.3.min.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+
+    $("#zoom_03").elevateZoom({
+      constrainType:"height",
+       constrainSize:274,
+        zoomType: "lens",
+         containLensZoom: true,
+          gallery:'gallery_01',
+           cursor: 'pointer', 
+           galleryActiveClass: "active"}); 
+
+//pass the images to Fancybox
+$("#zoom_03").bind("click", function(e) {  
+  var ez =   $('#zoom_03').data('elevateZoom');	
+	$.fancybox(ez.getGalleryList());
+  return false;
+})
+  });
+  </script>
+
+
+
+
+    <script src="jj/jquery.elevatezoom.js"></script>
+    <script src="jj/jquery.elevateZoom-3.0.8.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/javascript.js"></script> -->
+  
+</body>
+
+</html>

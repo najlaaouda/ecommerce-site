@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--- Refresh document every 30 seconds --->
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <!--- Define the author of a page --->
+    <meta name="author" content="Najlaa ouda">
+    <!--- Define keywords for search engines --->
+    <meta name="keywords" content="woman clothes,men,kids">
+    <!--- Define a description of your web page  --->
+    <meta name="description" content="A store that sells everything a family needs">
+    <!-- Setting the viewport to make your website look good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <title>E-commerce Site</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/logos.jpeg">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/profilestyle.css">
+    <link rel="stylesheet" href="css/registeration.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/single-product.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="pro/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start header -->
+    <header class=" text-white text-uppercase  ">
+        <div class="container">
+            <nav class="navbar p-0">
+                <div class="d-none d-sm-block">
+                    <i class="fas fa-bullhorn "></i>
+                    <span class="text">whatever you've got in mind -we've got inside</span>
+                </div>
+
+                <ul class="nav flex-column flex-sm-row ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fab fa-google-play "></i>
+                            <span class="text">app store</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">
+                            <i class="fab fa-app-store-ios  "></i>
+                            <span class="text">google play</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">eng</a>
+                        <div class="dropdown-menu ">
+                            <a href="#" class="dropdown-item">arabic</a>
+                            <a href="#" class="dropdown-item">english</a>
+                            <a href="#" class="dropdown-item">french</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">usd</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Egp</a>
+                            <a href="#" class="dropdown-item">Euro</a>
+                            <a href="#" class="dropdown-item">dinar</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Navbar Section -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="  col-sm-2 text-uppercase  ">
+                    <a href="index.html" class="navbar-brand text-dark   ">
+                        <img src="img/logos.jpeg" class="img-fluid" alt="logo-img">
+                    </a>
+                </div>
+                <div class="form-group   col-12 col-sm-6 py-4">
+                    <input type="search" class="form-control form-control-lg  search-item "
+                        placeholder="enter your keyword...">
+                    <div class="nav search-list text-dark">
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle drop-search" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                products
+                            </a>
+                            <div class="dropdown-menu search-menu-list" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">woman</a>
+                                <a class="dropdown-item" href="#">men</a>
+                                <a class="dropdown-item" href="#">bag</a>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa fa-search icon-search"></i>
+                </div>
+
+                <!--  -->
+                <div class="col-sm-4 ">
+                    <div class="row justify-content-between  ">
+                        <div class="col-6  font-weight-bold text-uppercase m-auto text-center d-flex ">
+                            <a href="#">
+                                <div><i class="fas fa-user p-2  border border-primary"></i></div>
+                                <!--  -->
+                                <div class="nav-item dropdown">
+                                    <a class=" nav-link p-0 pl-2 dropdown-toggle account" href="#" id="navaccount"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        my account
+                                    </a>
+                                    <p class=" d-flex pl-2 text-account">login/join</p>
+                                    <div class="dropdown-menu" aria-labelledby="navaccount">
+                                        <a class="dropdown-item " href="login.html">login/join </a>
+                                        <a class="dropdown-item " href="signup.html">sign up </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--  -->
+                        <div class="col-6  font-weight-bold text-uppercase m-auto text-center d-flex ">
+                            <a href="#">
+                                <div class="position-relative"><i
+                                        class="fas fa-shopping-cart p-2  border border-primary"></i>
+                                    <div class="num-cart">25</div>
+                                </div>
+                                <div>
+                                    <a class=" nav-link p-0 pl-2  account" href="mycart.html">
+                                        my cart
+                                    </a>
+                                    <p class=" d-flex pl-2 text-account">32.5 egp</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!--  -->
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End Navbar Section -->
+
+    <!-- Start Menu Section -->
+    <section class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-0">
+
+                    <nav class="navbar p-0 navbar-expand-lg mx-2 text-uppercase">
+
+                        <div class="">
+                            <a href="#navbarmenu" class="nav-link bg-primary w-100 py-3 px-5" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">
+                                category
+                                <i class="fas fa-bars ml-5 "></i>
+                            </a>
+                            <div class="dropdown-menu shadow-sm text-uppercase category-menu " id="navbarmenu">
+                                <a href="#" class="dropdown-item">woman clothing
+                                    <i class="fas fa-angle-right float-right  "></i> </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">men clothing
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">phone &accessories
+                                    <i class="fas fa-angle-right float-right  "></i> </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">computer & office
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">consumer electronics
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">jewelry & watches
+                                    <i class="fas fa-angle-right float-right  "></i> </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">bags & shoes
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">view all
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <!--  -->
+
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                            aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <i class="fas fa-bars text-white"></i>
+
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbar">
+                            <ul class="navbar-nav mr-auto menu">
+                                <li class="nav-item active">
+                                    <a class="nav-link mr-2" href="#">Home </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="allproduct.html">shop</a>
+                                </li>
+                                <li class="nav-item dropdown menu-area">
+                                    <a class="nav-link mr-2 dropdown-toggle" href="#" id="mega-one" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        women
+                                    </a>
+                                    <div class="dropdown-menu mega-area shadow-sm" aria-labelledby="mega-one">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a href="#" class="nav-link">
+                                                    <img src="img/megamenu/megamenu (1).jpg" alt="mega image"
+                                                        class="w-100">
+                                                </a>
+                                                <div class="dropdown-divider "></div>
+
+                                                <div class="dropdown-header text-uppercase text-dark">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a href="#" class="nav-link">
+                                                    <img src="img/megamenu/megamenu (2).jpg.jpg" alt="mega image"
+                                                        class="w-100">
+                                                </a>
+                                                <div class="dropdown-divider "></div>
+                                                <div class="dropdown-header text-uppercase">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a href="#" class="nav-link">
+                                                    <img src="img/megamenu/megamenu (3).jpg" alt="mega image"
+                                                        class="w-100">
+                                                </a>
+                                                <div class="dropdown-divider "></div>
+                                                <div class="dropdown-header text-uppercase">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                                <a href="#" class="nav-link">
+                                                    <img src="img/megamenu/megamenu (4).jpg" alt="mega image"
+                                                        class="w-100">
+                                                </a>
+                                                <div class="dropdown-divider "></div>
+                                                <div class="dropdown-header text-uppercase">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown menu-area">
+                                    <a class="nav-link dropdown-toggle" href="#" id="mega-one" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        men
+                                    </a>
+                                    <div class="dropdown-menu mega-area mr-2 shadow-sm" aria-labelledby="mega-one">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-3">
+
+                                                <div class="dropdown-header text-uppercase text-dark">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+
+                                                <div class="dropdown-header text-uppercase">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+
+                                                <div class="dropdown-header text-uppercase">categories</div>
+                                                <a href="#" class="dropdown-item">woman clothing</a>
+                                                <a href="#" class="dropdown-item">men clothing</a>
+                                                <a href="#" class="dropdown-item">phone & accessories</a>
+                                                <a href="#" class="dropdown-item">jewerly & watches</a>
+                                                <a href="#" class="dropdown-item">bags</a>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="dropdown-divider "></div>
+                                        <div class=" position-relative">
+                                            <a href="#" class="nav-link ">
+                                                <img src="img/megamenu/megmenu7.jpg" alt="mega image"
+                                                    class="w-100 pic ">
+
+                                                <div class="text-uppercase text-white title-women  text-center">
+                                                    <h1>new collection</h1>
+                                                    <p> hot deal</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="#">sale</a>
+                                </li>
+
+                                <li class="nav-item dropdown ">
+                                    <a href="#" class="nav-link  mr-2 dropdown-toggle" data-toggle="dropdown"
+                                        role="button" aria-haspopup="true" aria-expanded="false">pages</a>
+                                    <div class="dropdown-menu mega-area shadow-sm">
+                                        <a href="#" class="dropdown-item">home</a>
+                                        <a href="#" class="dropdown-item">categories</a>
+                                        <a href="#" class="dropdown-item">product</a>
+                                        <a href="#" class="dropdown-item">checkout</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- breadcrumbs -->
+    <section class="breadcrum shadow-sm">
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-links">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html" class="breadcrumb-links">Products</a></li>
+                    <li class="breadcrumb-item"><a href="products.html" class="breadcrumb-links">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" class="breadcrumb-links">Product Name</li>
+                </ol>
+        </nav>
+    </section>
+    <!-- breadcrumbs -->
+
+    <!--start Details product section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div id="product-main-view" class="sliderSlick">
+                        <div class="product-view">
+                            <img src="img/singleproduct/large/main-product01.jpg" alt="">
+                        </div>
+                        <div class="product-view">
+                            <img src="img/singleproduct/large/main-product02.jpg" alt="">
+                        </div>
+                        <div class="product-view">
+                            <img src="img/singleproduct/large/main-product03.jpg" alt="">
+                        </div>
+                        <div class="product-view">
+                            <img src="img/singleproduct/large/main-product04.jpg" alt="">
+                        </div>
+                    </div>
+                    <br />
+                    <div id="product-view" class="sliderSlick">
+                        <div class="product-view">
+                            <img src="img/singleproduct/thumb/thumb-product01.jpg"  alt="">
+                        </div>
+                        <div class="product-view">
+                            <img src="img/singleproduct/thumb/thumb-product02.jpg"  alt="">
+                        </div>
+                        <div class="product-view">
+                            <img src="img/singleproduct/thumb/thumb-product03.jpg"  alt="">
+                        </div>
+                        <div class="product-view">
+                            <img src="img/singleproduct/thumb/thumb-product04.jpg"   alt="">
+                        </div>
+                    </div>
+               
+                   
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="row ">
+                        <div class="col-md-4 px-3"> 
+                            <div class="d-flex justify-content-start">
+                                <span class=" px-3 py-1  bg-dark new-title">new</span>
+                                <span class=" px-3 py-1 sale-title  mx-2"> 20%</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 px-3">
+                            <div class="d-flex justify-content-end">
+                             <a href="#" class="nav-link px-2 py-1  bg-share">
+                             <i class="fas fa-heart"></i></a>
+    
+                            <a href="#" class="nav-link px-2 py-1 bg-like mx-2">
+                            <i class="fas fa-share-alt"></i></a>
+                            </div>
+                    </div>
+                    <div class="px-3">
+                        <p class="text-last-item1 m-0 mt-3">product name</p>
+                        <span class="title-item">180.00 egp</span>
+                        <del class="item-sale1 ">40.5 egp</del>
+                        <div class="d-flex">
+                        <div class="star-last  ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="far fa-star gray"></i>
+                            <span class="ml-4 review-title"> 3 Review(s) / add Review</span>
+                        </div>
+                       </div>
+                        <div class="my-3">
+                            <span class="avaliab-text" > avaliablity:</span><span class="text-data"> in stock</span>
+                        </div>
+                        <div class="my-3">
+                            <span class="avaliab-text" > brand:</span><span class="text-data"> nike</span>
+                        </div>
+                        <div class="my-3">
+                            <span class="avaliab-text" > shop:</span><span class="text-data"> time mall</span>
+                        </div>
+                        <p class="p-user ">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially unchanged.
+                            the release of Letraset sheets containing Lorem Ipsum passages, and more
+                            recently with desktop.
+                        </p>
+                        <div class="my-3 d-flex">
+                            <span class="avaliab-text" > price:</span>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary b-price dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  100,00 egp pff on quantity 100 pcs 
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-3 d-flex">
+                            <span class="avaliab-text"> size:</span>
+                            <ul class="nav mx-3"  id="Sizing"> 
+                                <li ><a href="#" class="text-size size mr-2">xs</a> </li>
+                                <li ><a href="#" class="text-size mr-2 ">sm</a> </li>
+                                <li ><a href="#" class="text-size mr-2 ">sl</a> </li>
+                                <li ><a href="#" class="text-size mr-2">xl</a> </li>
+                                <li  ><a href="#" class="text-size mr-2">2x</a> </li>
+                                <li ><a href="#" class="text-size mr-2">3x</a> </li>
+                            </ul>
+                        </div>
+
+                        <table class="table my-5">
+                            <tbody>
+                              <tr>
+                                <td class="avaliab-text font-weight-bold">color</td>
+                        
+                                  <td class="w-25" >
+                                          <img src="img/singleproduct/large/main-product01.jpg" class="w-75" alt="">
+                                  </td>
+                                  <td colspan="2" class="pl-3  text-table">
+                                      25.88 egp
+                                  </td>
+                                  <td colspan="3">
+                                      <div class="d-flex">
+                                          <button class="btn-quantity" onclick="decrement()" id="btn-inc">-</button>
+                                          <input id="demoInput" type="number" min=0 max=110 value="0">
+                                          <button class="btn-quantity"  onclick="increment()" id="btn-dec">+</button>
+                                      </div>  
+                                  </td>
+                                 
+                                </tr>
+                          
+                              <tr>
+                                <td></td>
+                              <td class="w-25" >
+                                      <img src="img/singleproduct/large/main-product02.jpg" class="w-75" alt="">
+                              </td>
+                              <td colspan="2" class="pl-3  text-table">
+                                  25.88 egp
+                              </td>
+                              <td colspan="3">
+                                  <div class="d-flex">
+                                      <button class="btn-quantity" onclick="decrement()" id="btn-inc2">-</button>
+                                      <input id="demoInput1" type="number" min=0 max=110 value="0">
+                                      <button class="btn-quantity"  onclick="increment()" id="btn-dec2">+</button>
+                                  </div>  
+                              </td>
+                             
+                            </tr>
+                      
+                              <tr>
+                                <td></td>
+                              <td class="w-25" >
+                                      <img src="img/singleproduct/large/main-product03.jpg" class="w-75" alt="">
+                              </td>
+                              <td colspan="2" class="pl-3  text-table">
+                                  25.88 egp
+                              </td>
+                              <td colspan="3">
+                                  <div class="d-flex">
+                                      <button class="btn-quantity" onclick="decrement()" id="btn-inc3">-</button>
+                                      <input id="demoInput2" type="number" min=0 max=110 value="0">
+                                      <button class="btn-quantity"  onclick="increment()" id="btn-dec3">+</button>
+                                  </div>  
+                              </td>
+                             
+                            </tr>
+                      
+                              <tr>
+                                  <td></td>
+                                <td class="w-25" >
+                                        <img src="img/singleproduct/large/main-product04.jpg" class="w-75" alt="">
+                                </td>
+                                <td colspan="2" class="pl-3  text-table">
+                                    25.88 egp
+                                </td>
+                                <td colspan="3">
+                                    <div class="d-flex">
+                                        <button class="btn-quantity" onclick="decrement()" id="btn-inc4">-</button>
+                                        <input id="demoInput3" type="number" min=0 max=110 value="0">
+                                        <button class="btn-quantity"  onclick="increment()" id="btn-dec4">+</button>
+                                    </div>  
+                                </td>
+                               
+                              </tr>
+                        
+                        
+                        
+                        
+                            </tbody>
+                          </table> 
+                    </div>
+
+                    </div>
+                </div>
+                <div class="col-md-2 p-0">
+                    <div class="details-cart p-3">
+                        <div class="cart-total">
+                            <i class="fas fa-shopping-cart "></i> <span class="cart-details"> cart total</span> 
+
+                        </div>
+                      <div class="my-3" >
+                          <span class="title-sub-total"> subtotal</span>
+                          <span class="total"> 200.0 egp</span>
+                      </div>
+                      <div class="my-3" >
+                        <span class="shipping"> shipping</span>
+                        <span class="total"> 200.0 egp</span>
+                    </div>
+                    <div class="my-3" >
+                        <span class="total-price"> totals</span>
+                        <span class="total ml-2"> 400.0 egp</span>
+                    </div>
+                    
+                    <a href="#" class="nav-link text-uppercase font-weight-bold checkout-btn">
+                       checkout <i class="fas fa-arrow-right ml-2 "></i> </a>
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- tab section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-toggle="list" href="#list-review" role="tab" aria-controls="home">reviews (3)</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                                href="#list-details" role="tab" aria-controls="profile">details</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                href="#list-description" role="tab" aria-controls="messages">description</a>
+                        </div>
+                    </div>
+                    <div class="col-8"></div>
+ 
+                    <div class="col-12">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-review" role="tabpanel"
+                                aria-labelledby="list-home-list">
+                                <!-- table -->
+                                <div class="row mt-4">
+                                    <div class="col-md-6 col-12 py-2">
+                                        <div class="row  no-gutters  justify-content-between">
+                                            <div class="col-md-3 col-12 user p-0 py-2">
+                                                <i class="far fa-user mr-1"></i>
+                                                <span class="text-capitalize">mustafa</span>
+                                            </div>
+                                            <div class="col-md-6 col-12 time p-0 py-2">
+                                                <i class="far fa-clock mr-1"></i>
+                                                <span class="text-capitalize">27 jan 2020/8:0 PM</span>
+                                            </div>
+                                            <div class="col-md-3 col-12  star-last p-0 py-2">
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="far fa-star gray"></i>
+                                            </div>
+                                        </div>
+                                        <p class="p-user ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                            It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged.
+                                            the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently with desktop.
+                                        </p>
+
+                                        <!-- review 2 -->
+                                        <div class="row  no-gutters  justify-content-between">
+                                            <div class="col-md-3 col-12 user p-0 py-2">
+                                                <i class="far fa-user mr-1"></i>
+                                                <span class="text-capitalize">mustafa</span>
+                                            </div>
+                                            <div class="col-md-6 col-12 time p-0 py-2">
+                                                <i class="far fa-clock mr-1"></i>
+                                                <span class="text-capitalize">27 jan 2020/8:0 PM</span>
+                                            </div>
+                                            <div class="col-md-3 col-12  star-last p-0 py-2">
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="far fa-star gray"></i>
+                                            </div>
+                                        </div>
+                                        <p class="p-user ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                            It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged.
+                                            the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently with desktop.
+                                        </p>
+
+                                        <!--end review 2 -->
+
+                                        <!-- review 3 -->
+                                        <div class="row  no-gutters  justify-content-between">
+                                            <div class="col-md-3 col-12 user p-0 py-2">
+                                                <i class="far fa-user mr-1"></i>
+                                                <span class="text-capitalize">mustafa</span>
+                                            </div>
+                                            <div class="col-md-6 col-12 time p-0 py-2">
+                                                <i class="far fa-clock mr-1"></i>
+                                                <span class="text-capitalize">27 jan 2020/8:0 PM</span>
+                                            </div>
+                                            <div class="col-md-3 col-12  star-last p-0 py-2">
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="fas fa-star "></i>
+                                                <i class="far fa-star gray"></i>
+                                            </div>
+                                        </div>
+                                        <p class="p-user ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                            It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged.
+                                            the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently with desktop.
+                                        </p>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination align-items-center justify-content-start mb-0">
+                                                <li class="page-item"><a class="page-link p-2" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link p-2" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link p-2" href="#">3</a></li>
+                                                <li class="page-item my-3">
+                                                    <a class="page-link p-2" href="#" aria-label="Next">
+                                                        <i class="fas fa-caret-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <!--end review 3 -->
+
+
+                                    </div>
+                                    <!-- start  write review-->
+                                    <div class="col-md-6 col-12 py-2">
+
+                                        <h4 class="title-contact">
+                                            write your review
+                                        </h4>
+                                        <p class="p-contact"> your  email address will not be  published</p>
+                                        <form>
+                                            <div class="form-group">
+                                              <input type="text" class="form-control name-input form-control-lg" id="exampleInputName" aria-describedby="nameHelp"
+                                               placeholder="your name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control email-input form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                 placeholder=" email address">
+                                              </div>
+                                              <div class="form-group">
+                                                <textarea class="form-control  textarea" id="exampleFormControlTextarea1" rows="5"
+                                                 placeholder="your review" ></textarea>
+                                              </div>
+                                              <div>
+                                            <span class="text-uppercase font-weight-bold mr-2"> your rating: </span>
+                                            <!-- <i class="far fa-star gray"></i>
+                                            <i class="far fa-star gray"></i>
+                                            <i class="far fa-star gray"></i>
+                                            <i class="far fa-star gray"></i>
+                                            <i class="far fa-star gray"></i> -->
+                                            <span id="1" class="fas fa-star gray" onmouseover="startRating(this)" ></span>
+                                            <span id="2" class="fas fa-star gray" onmouseover="startRating(this)" ></span>
+                                            <span id="3" class="fas fa-star gray" onmouseover="startRating(this)"></span>
+                                            <span  id="4" class="fas fa-star gray" onmouseover="startRating(this)"></span>
+                                            <span id="5" class="fas fa-star gray" onmouseover="startRating(this)"></span>
+                                            </div>
+                    
+                                            <a href="#" class="nav-link d-inline-block bg-primary p-2 mt-4"> submit</a>
+                    
+                                          </form>
+                    
+                                     </div>
+                                     <!-- end write review -->
+
+                                </div>
+
+                                <!-- end table -->
+                               </div>
+                                <div class="tab-pane fade" id="list-details" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                
+                                    <table class="table  mt-4">
+                                        <tbody>
+                                          <tr>
+                                            <td>Technicals</td>
+                                            <td>Printed </td>
+                                            <td>printing methods</td>
+                                            <td>heat-transfer printing</td>
+                                          </tr>
+                                          <tr>
+                                            <td>place of origin</td>
+                                            <td>china</td>
+                                            <td> brand name </td>
+                                            <td> hox-print </td>
+                                          </tr>
+                                          <tr>
+                                            <td>model number</td>
+                                            <td>apt001-7</td>
+                                            <td> feature </td>
+                                            <td> anti-shrink, anti-pilling, sustainable </td>
+                                          </tr>
+                                          <tr>
+                                            <td>collar</td>
+                                            <td>o-neck</td>
+                                            <td> fabric weight </td>
+                                            <td> 200 grams </td>
+                                          </tr>
+                                         
+                                        </tbody>
+                                      </table>    
+                                
+                                
+                                </div>
+                                <div class="tab-pane fade" id="list-description" role="tabpanel"
+                                    aria-labelledby="list-messages-list">
+
+                                    <table class="table table-bordered mt-4">
+                                        <tbody>
+                                          <tr>
+                                            <td>Technicals</td>
+                                            <td>Printed </td>
+                                            <td>printing methods</td>
+                                            <td>heat-transfer printing</td>
+                                          </tr>
+                                          <tr>
+                                            <td>place of origin</td>
+                                            <td>china</td>
+                                            <td> brand name </td>
+                                            <td> hox-print </td>
+                                          </tr>
+                                          <tr>
+                                            <td>model number</td>
+                                            <td>apt001-7</td>
+                                            <td> feature </td>
+                                            <td> anti-shrink, anti-pilling, sustainable </td>
+                                          </tr>
+                                          <tr>
+                                            <td>collar</td>
+                                            <td>o-neck</td>
+                                            <td> fabric weight </td>
+                                            <td> 200 grams </td>
+                                          </tr>
+                                         
+                                        </tbody>
+                                      </table>              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+        <!-- end Tab Section -->
+
+    <!--  start related products section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="title-suggested">
+                    <h4> related products </h4>
+                </div>
+            </div>
+            <div class="su-pro"></div>
+
+            <div class="row py-3">
+                <!-- card 1 -->
+                <div class="col-md-3 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-1.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <div class="d-flex justify-content-between">
+                                    <span class="title-last-item">35.5 egp</span>
+
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 1 -->
+                <!-- card 2 -->
+                <div class="col-md-3 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-2.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <div class="d-flex justify-content-between">
+                                    <span class="title-last-item">35.5 egp</span>
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end  card 2 -->
+                <!-- card 3 -->
+                <div class="col-md-3 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-3.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+
+                                <h5 class="offer-item-last1 ">-20%</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <del class="item-sales ">40.5 egp</del>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end  card 3 -->
+                <!-- card 4 -->
+                <div class="col-md-3 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-4.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <h5 class="offer-item-last ">-20%</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <del class="item-sales ">40.5 egp</del>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li class=" add-carts"> <a href="#" class="nav-link p-2 text-uppercase">
+                                                <i class="fas fa-shopping-cart mr-1"></i> add to cart</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 4 -->
+
+
+            </div>
+
+    </section>
+    <!-- End related products section -->
+
+    <!--  start like section -->
+    <section>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="title-suggested">
+                    <h4> you may also like </h4>
+                </div>
+            </div>
+            <div class="su-pro"></div>
+            <!-- group 1 -->
+            <div class="row py-3">
+                <!-- card 1 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-1.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 1 -->
+                <!-- card 2 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-2.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end  card 2 -->
+                <!-- card 3 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-3.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+
+                                <h5 class="offer-item-last1 ">-20%</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <del class="item-sales ">40.5 egp</del>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end  card 3 -->
+                <!-- card 4 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-4.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <h5 class="offer-item-last ">-20%</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <del class="item-sales ">40.5 egp</del>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 4 -->
+
+                <!-- card 5 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-1.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 5 -->
+                <!-- card 6 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-4.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 6 -->
+            </div>
+            <!-- end group 1 -->
+
+            <!-- group 2 -->
+            <div class="row py-3">
+                <!-- card 1 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-1.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 1 -->
+                <!-- card 2 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-2.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end  card 2 -->
+                <!-- card 3 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-3.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+
+                                <h5 class="offer-item-last1 ">-20%</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <del class="item-sales ">40.5 egp</del>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end  card 3 -->
+                <!-- card 4 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-4.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <h5 class="offer-item-last ">-20%</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <del class="item-sales ">40.5 egp</del>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 4 -->
+
+                <!-- card 5 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-1.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 5 -->
+                <!-- card 6 -->
+                <div class="col-md-2 col-12">
+                    <div class="card opacy ">
+                        <img src="img/related product/related-4.jpg" class="card-img-top w-100 " alt="">
+                        <div class="card-body px-1 pt-3">
+                            <div class="card-title">
+                                <h5 class="new-item-last bg-dark">new</h5>
+                                <span class="title-last-item">35.5 egp</span>
+                                <div class="d-flex justify-content-end">
+                                    <div class="star-last ">
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="fas fa-star "></i>
+                                        <i class="far fa-star gray"></i>
+                                    </div>
+                                </div>
+                                <p class="text-last-item mb-0 font-weight-bold">product name</p>
+
+                                <div class="productes-img">
+                                    <a href="#" class="nav-link text-uppercase font-weight-bold">
+                                        go to shop</a>
+                                </div>
+
+                                <div class="icon-productes mt-3 ">
+                                    <ul class="nav justify-content-between mx-2">
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-share">
+                                                <i class="fas fa-heart"></i></a>
+                                        </li>
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-share-alt"></i></a>
+                                        </li>
+
+                                        <li> <a href="#" class="nav-link px-2 py-1  border border-like">
+                                                <i class="fas fa-shopping-cart "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end  card 6 -->
+            </div>
+            <!-- end group 2 -->
+        </div>
+
+    </section>
+    <!-- End Like section -->
+
+    <!-- contact section -->
+    <section class="contact py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-arround">
+                <div class="col-md-3 col-sm-6">
+                    <div class="  bio  ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis!</p>
+                        <div class="bio-icon">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-facebook-f mr-4"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-twitter  mr-4"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-instagram  mr-4"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link">
+                                        <i class="fab fa-google-plus-g  mr-4"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- about -->
+                <div class="col-md-3 col-sm-6">
+                    <div class=" about">
+                        <h2> about</h2>
+                        <div>
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            <span class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Est quisquam voluptates quibusdam?</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-alt mr-1"></i>
+                            <span>+212 222 333 333</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope mr-1"></i>
+                            <span class="text-uppercase">info@gmail.com</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- about -->
+                <!-- custom -->
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="  customer ">
+                        <h2> customer service</h2>
+                        <ul class="nav ">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> about us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> shippimg & return</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> shipping guid</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link "> faq</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- customer -->
+                <!-- stay connect -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="  stay-connect  ">
+                        <h2> stay connected</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto. </p>
+                        <div class="form-group">
+                            <input type="email" class="form-control p-4  stay" placeholder="enter email address">
+                        </div>
+                        <a href="#" class=" nav-link d-inline-block p-3 send-contact ">
+                            jion newletter</a>
+
+                    </div>
+
+                </div>
+                <!-- stay connect -->
+            </div>
+
+            <div class="dropdown-divider divid mt-5"></div>
+
+        </div>
+    </section>
+    <!--end  contact section -->  
+
+    <script src="pro/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="pro/slick.min.js"></script>
+    <script src="pro/jquery.zoom.min.js"></script>
+    <script src="pro/main.js"></script> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+   <!-- <script src="js/javascript.js"></script> -->
+   <script>
+       function increment() {
+ document.getElementById("demoInput" ).stepUp();
+
+}
+function decrement() {
+  document.getElementById( "demoInput").stepDown();
+}
+
+
+   </script>
+ 
+</body>
+</html>

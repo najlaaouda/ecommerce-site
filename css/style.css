@@ -1095,3 +1095,14 @@ input::placeholder, textarea::placeholder{
     border-radius: 0;
 }
 /* contact section */
+.product-view>img{
+    width: 100%;
+  
+}
+/* #product-main-view .product-view>img{
+    height: 300px ;
+} */
+/* .zoomImg{
+    width:900px !important;
+    height: 900px !important;
+} */

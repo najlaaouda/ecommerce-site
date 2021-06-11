@@ -211,3 +211,15 @@ border-radius: 8px;
     border-radius: 0;
 }
 /* end contact */
+
+.owl-theme .owl-dots {
+    display: inline-block !important;
+    position: absolute;
+    top: -11%;
+    left: 94%;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+}

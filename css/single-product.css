@@ -1,0 +1,283 @@
+/* start BreadCrumbs */
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: var(--maincolor);
+    content: "/";
+    color: #b8b8b8 !important;
+}
+
+.breadcrumb-links {
+
+    text-decoration: none !important;
+
+}
+
+/* End Breadcrumbs */
+
+/*  details product section 1 */
+
+.bg-share,
+.bg-like,
+.bg-share:hover,
+.bg-like:hover{
+    background-color: #7fb239;
+    color:#fff;
+
+}
+.sale-title{
+    background-color: #7fb239;
+    color: #fff;
+}
+.new-title{
+    text-transform: capitalize;
+    color: #fff;
+    
+}
+.item-sales{
+    font-size: 12px;
+    color:#7fb239;
+    text-transform: uppercase;
+}
+
+.item-sale1{
+     font-size: 20px;
+     color: #7fb239;
+     text-transform: uppercase;
+     font-weight: 500;
+
+
+}
+.text-last-item1{
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.title-item{
+
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.review-title{
+    text-transform: capitalize;
+    font-size: 16px;
+    color:#959595;
+}
+.text-data{
+    color:#959595;
+    text-transform: capitalize;
+}
+.avaliab-text{
+
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.b-price,
+.b-price:hover,
+.b-price:not(:disabled):not(.disabled):active, .b-price:not(:disabled):not(.disabled).active, .show > .b-price.dropdown-toggle,        
+.b-price:focus{
+    color:rgb(246 68 68);
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+}
+.w-img{
+    width: 40%;
+}
+.text-table{
+    text-transform: uppercase !important;
+    color: #6c757d;
+    font-size: 17px !important;
+}
+.btn-quantity,
+input[type="number"]{
+
+    border:1px solid #ddd;
+    color: #6c757d;
+    background-color: transparent;
+}
+input[type="number"] {
+    font-size: 13px;
+    width: 53px;
+    padding: 4px 8px;
+     background-color: transparent;
+     outline: none;
+}
+  .details-cart{
+      background-color:#fefed0;
+      box-shadow:5px 5px 10px -3px #7fb239;
+    
+  }
+  .cart-total{
+
+      color:#7fb239;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+  .checkout-btn{
+      background-color:#7fb239; 
+      color:#fff
+  }
+  .checkout-btn i{
+      background-color:#fff; 
+      color:#7fb239;
+      border-radius: 50%;
+      padding: 2px;
+  }
+  .title-sub-total,
+  .shipping,
+  .total-price{
+      font-size: 14px;
+      color:#7fb239;
+      font-weight: 500;
+      text-transform: capitalize;
+
+  }
+  .total-price{
+      font-size: 18px;
+  }
+  .total{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+/* Ends details product section 1 */
+/* like section */
+
+.productes-img a {
+    font-size: 14px;
+}
+
+.productes-img {
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.offer-item-last1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 12;
+    background-color: var(--maincolor);
+    text-transform: capitalize;
+    padding: 5px 9px;
+    font-size: 14px;
+}
+
+.list-group {
+
+    flex-direction: row;
+
+}
+
+.list-group-item {
+    border: none;
+    padding: 0.75rem 0.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.list-group-item.active {
+    color: #7fb239;
+    background-color: transparent;
+    border-color: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 4px solid #7fb239;
+    border-bottom-width: 2px;
+
+}
+
+.list-group-item:last-child,
+.list-group-item:first-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-item-action:hover {
+    color: #495057;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.list-group-item-action:focus {
+    color: #7fb239;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/* end like section */
+
+/*  tab */
+
+.user, .time{
+color: #212121;
+font-size: 14px;
+
+}
+.user i, .time i{
+font-size: 15px;
+}
+.p-user{
+font-size: 13px;
+line-height: 1.7;
+text-align: justify;
+}
+
+/*  start write review */
+.table td{
+text-transform: capitalize;
+font-weight: 500;
+font-size: 14px;
+}
+.star-last .gray {
+color: #cccccc;
+}
+
+.star-last i {
+    color: #FFC600;
+    font-size: 14px;
+}
+    
+.p-contact{
+
+font-size: 13px;
+text-transform: capitalize;
+
+}
+.title-contact{
+
+font-size: 18px;
+text-transform: uppercase;
+font-weight: 700;
+}
+.email-input, .name-input, .textarea{
+background-color: transparent;
+border: 1px solid rgb(185, 185, 185) !important;
+border-radius: 0;
+font-weight: normal !important;
+
+}
+
+.textarea{
+font-size:15px;
+}
+.gray{
+color:#cccccc
+}
+.name-input:focus , textarea:focus{
+
+background-color: transparent;
+}
+/*   */
+/*  end write review */
+/*  end tab */
